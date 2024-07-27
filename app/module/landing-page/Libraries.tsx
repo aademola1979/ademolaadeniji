@@ -1,18 +1,18 @@
 
 
-const Libraries = () => {
+const MobileFrameworkAndLibraries = () => {
 
-    const Libraries=[
+    const mobileFramework=[
         {
-            name:"Reactjs"
+            name:"React-Native",
+            image:"",
+            imageSource:""
         },
-        {
-            name:"TailwindCSS"
-        }
+       
     ]
   return (
     <div>Libraries</div>
   )
 }
 
-export default Libraries
+export default MobileFrameworkAndLibraries

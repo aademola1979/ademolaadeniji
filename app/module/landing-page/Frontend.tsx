@@ -1,38 +1,41 @@
 
 
-const Frontend = () => {
+const FrontendFrameworkAndLibraries = () => {
     const frontendTools=[
+   
         {
-            name:"Javascript",
-        },
-    
-        {
-            name:"Typescript",
-        },
-    
-        {
-            name:"HTML",
-        },
-    
-        {
-            name:"CSS",
-        },
-        {
-            name:"TailwindCSS"
+            name:"TailwindCSS",
+            image:"",
+          
 
         },
 
         {
-            name:"HeadlessUI"
+            name:"HeadlessUI",
+            image:"",
+            
         },
 
         {
-            name:"ShadCDN"
+            name:"ShadCDN",
+            image:"",
+            
         },
-    
         {
-            name:"Markdown"
+            name:"Nextjs",
+            image:"",
+           
         },
+        {
+            name:"Reactjs",
+            image:"",
+            
+        },
+        {
+            name:"TailwindCSS",
+            image:"",
+            
+        }
     ];
 
 
@@ -41,4 +44,4 @@ const Frontend = () => {
   )
 }
 
-export default Frontend
+export default FrontendFrameworkAndLibraries

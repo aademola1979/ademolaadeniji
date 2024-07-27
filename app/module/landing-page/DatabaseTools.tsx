@@ -3,15 +3,19 @@
 const DatabaseTools = () => {
     const databaseTools=[
         {
-            name:"MYSQL"
+            name:"MYSQL",
+            image:"/images/database/mysql.svg",
+           
         },
         {
-            name:"Postgresql"
+            name:"Postgresql",
+            image:"/images/database/postgresql.svg",
+            
         },
         {
-            name:"MongoDB"
+            name:"MongoDB",
+            image:"/images/database/mongodb.svg",
         }
-
     ]
   return (
     <div>DatabaseTools</div>

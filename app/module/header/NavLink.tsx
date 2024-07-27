@@ -9,7 +9,7 @@ const NavLink = ({item, index, listLength}:{item:Item, index:number, listLength:
     const {text, link, icon} = item;
 
   return (
-    <Link href={link} className="flex text-gray-700 gap-2 hover:bg-slate-100 p-1"><span>{text}</span>{index + 1 !== listLength && <span>|</span> }</Link>
+    <Link href={link} className="flex text-gray-700 gap-2"><span className="hover:bg-slate-100 p-1 rounded">{text}</span>{index + 1 !== listLength && <span>|</span> }</Link>
   )
 }
 
