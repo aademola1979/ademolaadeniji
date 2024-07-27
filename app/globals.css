@@ -2,32 +2,407 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
+
+/*My codes*/
+
+:root{
+    --clr-blue-100: hsl(205, 63%, 48%);
+    --clr-slate-100: darkslategray;
+}
+
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container-px{
+    @apply px-2 sm:px-8 md:px-16 lg:px-20
+}
+
+/*First Section*/
+
+.hero-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    object-position: cover;
+}
+
+
+.hero-content{
+    position: relative;
+    margin-top: 15rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text-container{
+    padding: 0.5rem;
+    margin-top: 1rem;
+    max-width: max-content;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-btn-container{
+    padding-top: 1rem;
+
+    /*Added by me*/
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+
+.hero-text-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-text-position{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+
+
+.btn{
+    text-transform: capitalize;
+    background: transparent;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 3rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    outline: none;
+}
+
+.btn-blue{
+    border: none;
+    background-color: hsl(205, 63%, 48%);
+    color: white;
+}
+
+.btn-outline{
+    border: 2px solid hsl(205, 63%, 48%);
+    background-color: white;
+    color: hsl(205, 63%, 48%);
+}
+
+.section-titles{
+    color: darkslategrey;
+}
+
+/*Peronal info section*/
+
+.personal-info-section{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+   
+}
+
+.sub-info-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.sub-info-title{
+    color: lightgray;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.sub-info-label{
+    color: darkslategray;
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.contacts-container{
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+    
+}
+.contacts-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.contacts-wrapper a{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--clr-blue-100);
+    text-decoration: none;
+    padding: 0.2rem 0;
+}
+
+
+
+/*Social Section*/
+.socials-icons{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+
+
+/*Second Section*/
+.second-section{
+    margin-top: 2rem; 
+}
+
+
+.socials-section{
+    margin-top: 2rem;
+}
+
+.second-section-text{
+
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*Third Section*/
+.third-section h1{
+    margin-top: 1rem;
+    display: block;
+}
+
+.skill-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.skill-wrapper>button{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.cert-item-wrapper{
+    display: grid;
+    gap: 0.5rem;
+    margin: 0.75rem 0;
+   
+}
+
+/*Fifth Section*/
+.experience-wrapper{
+    display: flex;
+    gap: 2rem;
+    margin: 0.5rem 0;
+  
+
+}
+
+/*footer*/
+footer{
+  
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    
+    /*Added by me*/
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer p {
+    /*font-size:1rem;*/
+    padding-left: 2rem;
+    font-weight: 600;
+    color: var(--clr-slate-100);
+}
+
+.show-mobile-only{
+    display: block;
+}
+
+.show-desktop-only{
+    display: none;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+}
+.section-titles{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: darkslategrey;
+}
+/*
+@media screen{
+
+}
+*/
+
+/*Responsive section for desktop*/
+@media(min-width:1024px){
+    .main-content{
+        grid-template-columns: 350px 1fr;
+    }
+
+    .show-desktop-only{
+        display: grid;
+    }
+
+    .show-mobile-only{
+        display: none;
+    }
+
+    /*First section*/
+    .hero-content{
+        padding: 5rem 0;
+    }
+
+    .second-section{
+        margin: 3rem;
+    }
+
+    
+
+
+    .personal-info-section{
+        padding-left: 0;
+    }
+
+    footer{
+        padding-bottom: 0.5rem;
+
+        /*Added by me*/
+        display: flex;
+        justify-content: start;
+        
+    }
+
+    footer p{
+
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+
+ 
+
+    .socials-section{
+        margin-top: 5rem;
+    }
+
+    /*Added by me*/
+    .hero-btn-container{
+        display: none;
+        justify-content: start;
+    }
+
+    .second-section{
+        margin-top: 8rem; 
+    }
+
+    .sub-info-label{
+        font-weight: 700;
+        font-size: 1.5rem;
+
+    }
+
+    .sub-info-title{
+        font-weight: 600;
+    font-size: 1.2rem;
+
+    }
+
+    .skill-wrapper>button{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+  
+
+}
+
