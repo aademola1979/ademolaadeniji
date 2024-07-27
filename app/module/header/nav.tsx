@@ -22,8 +22,8 @@ const Nav = () => {
     },
 
     {
-        text:"Share Link",
-        link:"/share-links",
+        text:"Git Repos",
+        link:"/git-repos",
         icon:""
     }
 ]

@@ -1,7 +1,9 @@
+import Card from "./Card"
+import CardWrapper from "./CardWrapper"
 
 
 const ServerSideFrameworkAndLibraries = () => {
-    const ServerSideTools=[
+    const serverSideTools=[
         {
             name:"Nextjs",
             image:"/images/frameworks-and-libraries/next.svg",
@@ -9,7 +11,7 @@ const ServerSideFrameworkAndLibraries = () => {
         },
         {
             name:"Expressjs",
-            image:"/images/frameworks-and-libraries/expressjs.svg",
+            image:"/images/frameworks-and-libraries/expressjs.png",
         },
         {
             name:"Django",
@@ -17,8 +19,7 @@ const ServerSideFrameworkAndLibraries = () => {
         },
         {
             name:"FastAPI",
-            image:"",
-            imageSource:"",
+            image:"/images/frameworks-and-libraries/fastapi.svg",
         },
         {
             name:"Flask",
@@ -31,14 +32,18 @@ const ServerSideFrameworkAndLibraries = () => {
         {
             name:"Nodejs",
             image:"/images/frameworks-and-libraries/nodejs.svg",
-        },
-        {
-            name:".NET",
-            image:""
-        }  
+        }, 
     ]
   return (
-    <div>ServerSide</div>
+    
+    <CardWrapper title="Server Side Frameworks and Libraries">
+        {
+            serverSideTools.map((tool, i)=>(
+                
+                <Card key={i} tool={tool}/>
+            ))
+        }
+    </CardWrapper>
   )
 }
 

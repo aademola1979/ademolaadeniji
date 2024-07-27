@@ -1,3 +1,5 @@
+import Card from "./Card"
+import CardWrapper from "./CardWrapper"
 
 
 const DatabaseTools = () => {
@@ -18,7 +20,14 @@ const DatabaseTools = () => {
         }
     ]
   return (
-    <div>DatabaseTools</div>
+    <CardWrapper title="Database Languages">
+        {
+            databaseTools.map((tool, i)=>(
+                
+                <Card key={i} tool={tool}/>
+            ))
+        }
+    </CardWrapper>
   )
 }
 

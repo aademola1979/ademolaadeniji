@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Card from "./Card"
+import CardWrapper from "./CardWrapper"
 
 
 
@@ -22,7 +24,7 @@ const ProgrammingLanguages = () => {
     },
     {
         name:"C#",
-        image:"/images/programming-languages/c#.svg",
+        image:"/images/programming-languages/Csharp.svg",
     },
     {
         name:"PHP",
@@ -36,20 +38,17 @@ const ProgrammingLanguages = () => {
 
 
   return (
-    <div>
-        <div>
+   
+        <CardWrapper title="Programming Languages">
             {
-                programmingLanguages.map((language, i)=>(
-                    <span key={i}>{language.name}
-                    <Image src={language.image} alt={language.name} height={40} width={40}/></span>
+                programmingLanguages.map((tool, i)=>(
+                    <Card key={i} tool={tool}/>
                 ))
-            }
-        
-        
-        </div>
-        <h3></h3>
-     
-    </div>
+            }    
+    </CardWrapper>
+
+  
+    
   )
 }
 

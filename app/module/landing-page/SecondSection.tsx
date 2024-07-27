@@ -8,9 +8,7 @@ const SecondSection = () => {
         <div className="grid gap-4">
             <DesktopOnly />
             <Offers />
-            <SkillSets />
-
-            
+            <SkillSets /> 
         </div>
     )
 }

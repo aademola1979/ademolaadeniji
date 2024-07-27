@@ -16,7 +16,7 @@ const Offers = () => {
 
     ]
     return (
-        <section className=" bg-white/90 shadow-sm pt-4">
+        <section className=" bg-white/90 shadow-sm py-4 grid items-center">
             <h4 className="text-2xl font-bold text-center sm:text-4xl section-titles mb-4">What I Offer</h4>
             <div>
                 <p className="text-[rgb(150, 150, 150)] text-lg mb-2 sm:text-xl pr-0  text-gray-800 container-px">

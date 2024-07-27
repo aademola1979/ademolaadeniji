@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 const DesktopOnly = () => {
@@ -8,8 +9,8 @@ const DesktopOnly = () => {
                 <h3 className="text-gray-500 text-2xl font-bold">Software Developer</h3>
             </div>
             <div className="flex pt-[5rem] gap-8">
-                <button className="text-lg font-semibold w-[11rem] h-[4rem] flex justify-center items-center btn btn-blue hover:scale-105 transition-all ease-in-out duration-200">Share Link</button>
-                <button className="text-lg font-semibold w-[11rem] h-[4rem] flex justify-center items-center btn btn-outline hover:scale-105 transition-all ease-in-out duration-200">Projects</button>
+                <Link href="/git-repos" className="text-lg text-center font-semibold w-[11rem] h-[4rem] flex justify-center items-center rounded-full btn-blue hover:scale-105 transition-all ease-in-out duration-200">Git Repo.</Link>
+                <Link href="/projects" className="text-lg text-center font-semibold w-[11rem] h-[4rem] flex justify-center items-center rounded-full btn-outline hover:scale-105 transition-all ease-in-out duration-200">Projects</Link>
             </div>
         </div>
     )

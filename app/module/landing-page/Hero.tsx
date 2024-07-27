@@ -12,7 +12,7 @@ const Hero = () => {
           <p className="hero-text-position">Software Developer</p>
         </div>
         <div className="flex w-full justify-around lg:hidden">
-         <Link href='/share-links' className="hover:scale-105 btn py-4 w-[8rem] text-center text-base hero-btn btn-blue font-normal">Share Links</Link>
+         <Link href='/git-repos' className="hover:scale-105 btn py-4 w-[8rem] text-center text-base hero-btn btn-blue font-normal">Git Repo.</Link>
           <Link href='/projects' className="hover:scale-105 btn hero-btn btn-outline py-4 w-[8rem] text-center text-base font-semibold">Projects</Link>
         </div>
 
