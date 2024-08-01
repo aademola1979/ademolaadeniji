@@ -20,11 +20,11 @@ const DatabaseTools = () => {
         },
         {
             name:"Mongoose",
-            image:"/images/database/mongodb.svg",
+            image:"/images/database/mongoose.svg",
         },
         {
             name:"Prisma",
-            image:"/images/database/mongodb.svg",
+            image:"/images/database/prisma.svg",
         }
     ]
   return (
