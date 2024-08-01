@@ -2,25 +2,25 @@ import { TiTick } from "react-icons/ti";
 const Offers = () => {
     const offers = [
         {
-            text: "e-commerce web applications,"
+            text: "e-commerce web applications."
         },
         {
-            text: "blog website,"
+            text: "blog websites."
         },
         {
-            text: "school and other educational web applications, and"
+            text: "personal profile websites."
         },
         {
-            text: "mobile applications."
-        },
+            text: "school and other educational institution web applications."
+        }
 
     ]
     return (
-        <section className=" bg-white/90 shadow-sm py-4 grid items-center">
+        <section className=" bg-white/90 shadow-md mt-4 py-2 grid ">
             <h4 className="text-2xl font-bold text-center sm:text-4xl section-titles mb-4">What I Offer</h4>
             <div>
-                <p className="text-[rgb(150, 150, 150)] text-lg mb-2 sm:text-xl pr-0  text-gray-800 container-px">
-                    Responsive, effective, efficient, attractive and scalable:
+                <p className="text-[rgb(150, 150, 150)] text-base mb-2 sm:text-lg pr-0  text-gray-800 container-px">
+                    Responsive, dynamic, SEO-friendly, user-friendly, attractive and scalable:
                 </p>
                 <ul className="container-px text-base sm:text-lg">
                     {

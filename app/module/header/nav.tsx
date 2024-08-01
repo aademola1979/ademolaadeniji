@@ -16,13 +16,13 @@ const Nav = () => {
     },
 
     {
-        text:"Projects",
-        link:"/projects",
+        text:"My Works",
+        link:"/my-works",
         icon:""
     },
 
     {
-        text:"Git Repos",
+        text:"Git Repo",
         link:"/git-repos",
         icon:""
     }

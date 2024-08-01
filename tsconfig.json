@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/module/landing-page/CardWrapper.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/module/landing-page/skill-sets/CardWrapper.js", "app/module/CTA/index.js"],
   "exclude": ["node_modules"]
 }

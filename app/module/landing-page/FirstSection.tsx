@@ -1,16 +1,14 @@
 
+import CallToAction from "../CTA"
 import Hero from "./Hero"
-import PersonalInfo from "./PersonalInfo"
-import SocialMedia from "./SocialMedia"
-
 
 const FirstSection = () => {
   return (
-    <section className="w-full">
+    <section className="w-full grid gap-4">
       <Hero />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1">
-        <PersonalInfo />
-        <SocialMedia />
+    
+      <div className=" hidden h-fit lg:grid rounded-lg bg-white/70 py-4 shadow-md">
+        <CallToAction />
       </div>
     </section>
   )

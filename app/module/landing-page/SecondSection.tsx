@@ -1,14 +1,16 @@
+
 import DesktopOnly from "./DesktopOnly"
 import Offers from "./Offers"
-import SkillSets from "./SkillSets"
+
+
+
 
 
 const SecondSection = () => {
     return (
-        <div className="grid gap-4">
+        <div className="grid gap-4 !max-h-fit">
             <DesktopOnly />
             <Offers />
-            <SkillSets /> 
         </div>
     )
 }

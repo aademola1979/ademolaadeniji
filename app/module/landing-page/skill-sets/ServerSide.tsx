@@ -36,7 +36,7 @@ const ServerSideFrameworkAndLibraries = () => {
     ]
   return (
     
-    <CardWrapper title="Server Side Frameworks and Libraries">
+    <CardWrapper title="Server Frameworks and Libraries">
         {
             serverSideTools.map((tool, i)=>(
                 

@@ -17,10 +17,18 @@ const DatabaseTools = () => {
         {
             name:"MongoDB",
             image:"/images/database/mongodb.svg",
+        },
+        {
+            name:"Mongoose",
+            image:"/images/database/mongodb.svg",
+        },
+        {
+            name:"Prisma",
+            image:"/images/database/mongodb.svg",
         }
     ]
   return (
-    <CardWrapper title="Database Languages">
+    <CardWrapper title="Database Languages and Tools">
         {
             databaseTools.map((tool, i)=>(
                 

@@ -19,14 +19,6 @@ const ProgrammingLanguages = () => {
     },
 
     {
-        name:"Java",
-        image:"/images/programming-languages/java.svg",
-    },
-    {
-        name:"C#",
-        image:"/images/programming-languages/Csharp.svg",
-    },
-    {
         name:"PHP",
         image:"/images/programming-languages/php.png",
     },
@@ -39,7 +31,7 @@ const ProgrammingLanguages = () => {
 
   return (
    
-        <CardWrapper title="Programming Languages">
+        <CardWrapper title="Web Programming Languages">
             {
                 programmingLanguages.map((tool, i)=>(
                     <Card key={i} tool={tool}/>
