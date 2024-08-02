@@ -268,7 +268,7 @@ body{
 .skill-wrapper{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 1rem;
 }
 
