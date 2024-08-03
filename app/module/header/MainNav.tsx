@@ -31,7 +31,7 @@ import DropdownMenuComponent from "../DropDownMenuComponent"
                 <BreadcrumbSeparator />
 
                 <BreadcrumbItem  className="text-[1rem]">
-                    <BreadcrumbLink href='/my-works'>My Wroks</BreadcrumbLink>
+                    <BreadcrumbLink href='/my-works'>My Works</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem  className="text-[1rem]">
