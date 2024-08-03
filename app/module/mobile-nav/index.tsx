@@ -17,6 +17,11 @@ const MobileNav = () => {
       link: "/",
       icon: ""
     },
+    {
+      text: "About Me",
+      link: "/about",
+      icon: ""
+    },
 
     {
       text: "Contact",

@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const CallToAction = () => {
   return (
-    <section className="h-[450px] bg-white py-4 ">
+    <section className="h-[450px] bg-white py-4 rounded lg:rounded-xl">
         <div className="flex w-full justify-center contact-btn--wrapper hover:scale-105 duration-200 ease-in-out transition-all">
           <Link href="/contact" className="rounded-full border border-gray-500 p-2  section-titles">Contact Me Now</Link>
         </div>

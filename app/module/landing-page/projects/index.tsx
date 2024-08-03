@@ -11,7 +11,7 @@ const Projects = () => {
       header: "Debitis, cupiditate",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia saepe laudantium nemo exercitationem repellat, quas nobis neque magnam officiis.",
-      footer: "See Site",
+      footer: "See More",
       link: "#"
     },
     {
@@ -19,7 +19,7 @@ const Projects = () => {
       header: "consectetur adipisicing elit.",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia saepe laudantium nemo exercitationem repellat, quas nobis neque magnam officiis.",
-      footer: "See Site",
+      footer: "See More",
       link: "#"
     },
   
@@ -28,7 +28,7 @@ const Projects = () => {
       header: "quas nobis neque magnam",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia saepe laudantium nemo exercitationem repellat, quas nobis neque magnam officiis.",
-      footer: "See Site",
+      footer: "See More",
       link: "#"
     },
     

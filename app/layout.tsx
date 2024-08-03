@@ -55,7 +55,7 @@ export const metadata = {
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={` root-layout !w-[100vw] bg-gray-100`}>
+      <body className={` !max-w-[100vw] bg-gray-100`}>
         <Header />
         {children}
         <Footer/>

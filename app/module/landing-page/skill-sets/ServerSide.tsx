@@ -21,10 +21,7 @@ const ServerSideFrameworkAndLibraries = () => {
             name:"FastAPI",
             image:"/images/frameworks-and-libraries/fastapi.svg",
         },
-        {
-            name:"Flask",
-            image:"/images/frameworks-and-libraries/flask.svg",
-        },
+    
         {
             name:"Laravel",
             image:"/images/frameworks-and-libraries/laravel.svg",
