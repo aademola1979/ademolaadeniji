@@ -82,6 +82,7 @@
 :root{
     --clr-blue-100: hsl(205, 63%, 48%);
     --clr-slate-100: darkslategray;
+    --clr-dark-blue:rgba(2, 1, 20, 0.8738);
 }
 
 body{
@@ -164,19 +165,17 @@ body{
 }
 
 .btn-blue{
-    border: none;
-    background-color: darkslategray;
-    color: white;
+    @apply border-0 text-white bg-[#1d042c]
 }
 
 .btn-outline{
-    border: 2px solid darkslategray;
+    border: 2px solid #1d042c;
     background-color: white;
-    color: darkslategray;
+    color: #1d042c;
 }
 
 .section-titles{
-    color: darkslategrey;
+    color: var(--clr-dark-blue);
 }
 
 /*Peronal info section*/
@@ -203,7 +202,7 @@ body{
 }
 
 .sub-info-label{
-    color: darkslategray;
+    color: var(--clr-dark-blue);
     font-weight: 700;
     font-size: 1rem;
 
@@ -325,11 +324,11 @@ footer p {
 .section-titles{
     font-size: 1.4rem;
     font-weight: 700;
-    color: darkslategrey;
+    color: var(--clr-dark-blue);
 }
 
 .logo{
-    background-color: darkslategray;
+    background-color: var(--clr-dark-blue);
 }
 /*
 @media screen{
@@ -425,3 +424,9 @@ footer p {
     background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
+.mana-gradient{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(190deg, #d5e3fc 1%, #e8e8f1 36%, #ffffff 73%);
+  
+  }

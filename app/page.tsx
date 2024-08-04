@@ -27,12 +27,12 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="bg-gradient max-w-full grid">
-        <div className="main-content container-px p-4">
+    <main className="mana-gradient py-4 grid">
+        <div className="main-content mb-4 container-px">
           <FirstSection />
           <SecondSection />
-        </div>
-        <div className="grid items-center mx-4 sm:mx-16 my-4 lg:hidden bg-gradient rounded-lg shadow-md ">
+        </div> 
+        <div className="block mx-4 my-4 sm:mx-16 lg:hidden rounded-lg bg-white shadow-md">
           <CallToAction />
         </div>
       </main>

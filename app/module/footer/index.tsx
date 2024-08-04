@@ -4,7 +4,7 @@ import UpperFooter from "./UpperFooter"
 
 const Footer = () => {
   return (
-    <footer className="bg-white/90 container-px py-4 grid w-full">
+    <footer className="bg-white/90 px-4 py-4 block container-px w-full border-t-2 border-gray-100">
         <UpperFooter />
         <LowerFooter />
     </footer>

@@ -7,8 +7,8 @@ const DesktopOnly = () => {
     return (
         <div className=" justify-center items-center show-desktop-only !min-w-full">
             <div className="grid">
-                <h1 className="font-bold font-serif text-white text-4xl">Ademola Adeniji</h1>
-                <h3 className="text-white/80 font-serif text-2xl font-semibold">Web App Developer</h3>
+                <h1 className="font-bold font-serif text-black/90 text-4xl">Ademola Adeniji</h1>
+                <h3 className="text-black/70 font-serif text-2xl font-semibold">Web App Developer</h3>
               
             </div>
             <div className="flex pt-[5rem] gap-8">
