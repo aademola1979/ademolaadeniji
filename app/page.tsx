@@ -1,9 +1,8 @@
 import SecondSection from "./module/landing-page/SecondSection";
 import FirstSection from "./module/landing-page/FirstSection";
 import CallToAction from "./module/CTA";
-import SkillSets from "./module/landing-page/skill-sets";
 import siteMetadata from "@/lib/utility/siteMetadata";
-import Projects from "./module/landing-page/projects";
+
 
 export default function Home() {
 
