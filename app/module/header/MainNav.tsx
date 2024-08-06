@@ -5,7 +5,7 @@ import {
     BreadcrumbList,
     BreadcrumbSeparator,
   } from "@/components/ui/breadcrumb"
-import DropdownMenuComponent from "../DropDownMenuComponent"
+
 
    function MainNav() {
 
@@ -13,30 +13,20 @@ import DropdownMenuComponent from "../DropDownMenuComponent"
 
     return (
      
-      <Breadcrumb className="hidden lg:block">
+      <Breadcrumb className="hidden fixed font-medium top-2 right-1/2 translate-x-1/2 bg-white/80 backdrop-blur-md lg:flex items-center justify-center border rounded-full px-8 py-3 border-solid border-black/40 mt-2">
         <BreadcrumbList>
                 <BreadcrumbItem  className="text-[1rem]">
                     <BreadcrumbLink href='/'>Home</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
-                
                 <BreadcrumbItem  className="text-[1rem]">
                     <BreadcrumbLink href='/about'>About Me</BreadcrumbLink>
-                </BreadcrumbItem>
+                </BreadcrumbItem> 
                 <BreadcrumbSeparator />
-
                 <BreadcrumbItem  className="text-[1rem]">
                     <BreadcrumbLink href='/contact'>Contact</BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbSeparator />
-
-                <BreadcrumbItem  className="text-[1rem]">
-                    <BreadcrumbLink href='/my-works'>My Works</BreadcrumbLink>
-                </BreadcrumbItem>
-                <BreadcrumbSeparator />
-                <BreadcrumbItem  className="text-[1rem]">
-                    <BreadcrumbLink href='/git-repos'>Git Repos</BreadcrumbLink>
-                </BreadcrumbItem> 
+                
         </BreadcrumbList>
       </Breadcrumb>
     )

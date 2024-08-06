@@ -64,7 +64,7 @@ const MobileNav = () => {
             {
               navItmes.map((item, i) => (
                 <SheetClose key={i} asChild>
-                  <Link href={item.link} className="text-black/60 hover:text-black ">{item.text}</Link>
+                  <Link href={item.link} className="text-black/60 hover:text-black font-medium">{item.text}</Link>
                 </SheetClose>
               ))
             }

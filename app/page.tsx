@@ -32,7 +32,7 @@ export default function Home() {
           <FirstSection />
           <SecondSection />
         </div> 
-        <div className="block mx-4 my-4 sm:mx-16 lg:hidden rounded-lg bg-white shadow-md">
+        <div className="flex items-center justify-center  h-fit mx-4 my-4 sm:mx-16 lg:hidden rounded-lg bg-white shadow-md">
           <CallToAction />
         </div>
       </main>
