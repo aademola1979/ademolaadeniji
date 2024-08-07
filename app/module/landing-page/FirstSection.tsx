@@ -1,5 +1,5 @@
 
-import CallToAction from "../CTA"
+import CallToAction from "@/app/module/landing-page/CTA"
 import Hero from "./Hero"
 
 const FirstSection = () => {

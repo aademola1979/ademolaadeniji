@@ -1,6 +1,6 @@
-import Image from "next/image"
-import PersonalInfo from "../landing-page/PersonalInfo"
-import SocialMedia from "../landing-page/SocialMedia"
+
+import PersonalInfo from "../PersonalInfo"
+
 import Link from "next/link"
 
 

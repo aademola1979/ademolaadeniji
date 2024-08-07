@@ -1,6 +1,6 @@
 import SecondSection from "./module/landing-page/SecondSection";
 import FirstSection from "./module/landing-page/FirstSection";
-import CallToAction from "./module/CTA";
+import CallToAction from "./module/landing-page/CTA"
 import siteMetadata from "@/lib/utility/siteMetadata";
 
 
