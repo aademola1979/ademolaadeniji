@@ -4,7 +4,7 @@ import AboutIntro from "./AboutIntro"
 
 const AboutSectionOne = () => {
   return (
-    <div className="container-px">
+    <div className="container-px py-[2rem]">
       <AboutHeader />
       <AboutIntro />
     </div>

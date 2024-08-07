@@ -1,5 +1,5 @@
 import {CarouselItem} from "@/components/ui/carousel"
-import Card from "./skill-sets/Card"
+import Card from "../about/skill-sets/Card"
 type propsItem = {
     name:string,
     image:string

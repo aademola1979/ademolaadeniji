@@ -26,7 +26,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-    <main className="mana-gradient py-4 grid">
+    <main className="mana-gradient py-4 grid !max-w-full">
         <div className="main-content mb-4 container-px">
           <FirstSection />
           <SecondSection />
