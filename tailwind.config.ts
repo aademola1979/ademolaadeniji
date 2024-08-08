@@ -18,6 +18,7 @@ const config = {
       },
     },
     extend: {
+     
       screens:{
         small:"320px",
         bigSmall:"360px"

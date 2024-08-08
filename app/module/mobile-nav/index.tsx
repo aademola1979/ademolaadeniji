@@ -8,6 +8,9 @@ import {
 import { MenuIcon } from "lucide-react"
 import Link from "next/link"
 import Logo from "../Logo"
+import { FadeInComponent} from "../AnimatedContainer"
+import { once } from "events"
+
 
 
 const MobileNav = () => {
@@ -39,23 +42,22 @@ const MobileNav = () => {
       text: "Git Repo",
       link: "/git-repos",
       icon: ""
-    }
+    },
+    
   ]
   const [open, setOpen] = useState(false)
 
   const toggleMobileNav = () => (setOpen(prev => !prev))
 
-  const closeMobileNav = () => setOpen(false)
+  //const closeMobileNav = () => setOpen(false)
   const openMobileNave = () => setOpen(true)
 
-
-  console.log(open)
 
   return (
     <div>
       <Sheet>
-        <SheetTrigger asChild className="" onClick={toggleMobileNav}><MenuIcon className="section-titles block lg:hidden cursor-pointer" /></SheetTrigger>
-        <SheetContent side="left" onClick={toggleMobileNav} className="">
+        <SheetTrigger asChild className="" onClick={toggleMobileNav}><MenuIcon className="section-titles block sm:hidden cursor-pointer" /></SheetTrigger>
+        <SheetContent side="left" onClick={toggleMobileNav} className="min-h-[100vh] overflow-x-auto">
           <SheetClose asChild>
             <Logo className="h-4 w-4 py-2 mb-4" />
           </SheetClose>
@@ -64,7 +66,23 @@ const MobileNav = () => {
             {
               navItmes.map((item, i) => (
                 <SheetClose key={i} asChild>
-                  <Link href={item.link} className="text-black/60 hover:text-black font-medium">{item.text}</Link>
+
+
+                  <Link href={item.link} className="text-black/60 hover:text-black text-lg font-medium">
+                    <FadeInComponent
+                      className="text-lg font-medium"
+                      type='spring'
+                      delay={i * 0.1}
+                      direction='right'
+                      duration={1}
+                      viewport={{ once:true }}
+
+                    >
+                      {item.text}
+
+                    </FadeInComponent>
+                  </Link>
+
                 </SheetClose>
               ))
             }

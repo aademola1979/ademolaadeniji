@@ -1,4 +1,5 @@
 import { TiTick } from "react-icons/ti";
+import { FadeInComponent } from "../AnimatedContainer";
 const Offers = () => {
     const offers = [
         {
@@ -16,7 +17,13 @@ const Offers = () => {
 
     ]
     return (
-        <section className="py-[2rem] bg-white/90 shadow-md grid items-center ">
+        <FadeInComponent
+        delay={0.5}
+        duration={1.2}
+        direction='up'
+        type='tween'
+        viewport={{ once:true }}
+         className="py-[2rem] bg-white/90 shadow-md grid items-center ">
             <h4 className="text-2xl font-bold text-center sm:text-4xl section-titles mb-4">What I Offer</h4>
             <div>
                 <p className="text-[rgb(150, 150, 150)] text-base mb-2 sm:text-lg pr-0  text-gray-800 container-px">
@@ -37,7 +44,7 @@ const Offers = () => {
             </div>
 
 
-        </section>
+        </FadeInComponent>
     )
 }
 

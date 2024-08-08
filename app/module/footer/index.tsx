@@ -1,3 +1,4 @@
+import { StaggerContainer } from "../AnimatedContainer"
 import LowerFooter from "./LowerFooter"
 import UpperFooter from "./UpperFooter"
 

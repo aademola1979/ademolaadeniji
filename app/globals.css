@@ -82,7 +82,7 @@
 :root{
     --clr-blue-100: hsl(205, 63%, 48%);
     --clr-slate-100: darkslategray;
-    --clr-dark-blue:rgba(2, 1, 20, 0.8738);
+    --clr-dark-blue:rgb(2, 0, 3);
 }
 
 body{

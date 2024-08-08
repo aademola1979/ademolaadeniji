@@ -1,19 +1,71 @@
+import { FadeInComponent, StaggerContainer } from "../AnimatedContainer"
 
 
 const AboutIntro = () => {
   return (
-    <div className="container-px grid gap-4 text-base lg:text-lg">
-        <p className="">I am Ademola, the son of Adeniji. I am a software developer, specialising in web applications. If your idea or solution is meant to run on web, then count me in.
+    <StaggerContainer className="container-px grid gap-[4rem] text-base lg:text-lg">
+      <FadeInComponent
+        delay={0.5}
+        duration={1.2}
+        direction='up'
+        type='tween'
+        viewport={{ once: true }}
+        className=''>
+        I am Ademola, the son of Adeniji. I am a software developer, specialising in web application creation.
+      </FadeInComponent>
 
-        </p>
-        <p>I have B.A. and M.A. English Language from Obafemi Awolowo University and University of Ibadan respectively. My interests in human languages, arts and creativity led to another interests: computer languages, software design and creation.</p>
-        <p>I self-trained for some years before having the honour of being part of the Federal Government of Nigeria&apos;s Three Million Technical Training (3MTT), in which I opted to study Software Development.</p>
-            <p>During the 3MTT programme, I had hands-on training and practical experience under CAD Consultant, a tech company in Port Harcourt, Nigeria.</p>
-        <p>Currently, I devote my energy, attention and skills to creating software solutions for businesses, particularly start-up businesses, and individuals; through my company, PragmaTech Nigeria.
-            I myself being an owner of a start-up business, I perfeclty understand the challenges start-up face and how to use technologies to surmount them.</p>
-            <p>Bring your ideas and I will bring my skills. We will create a solution that will help your bussiness and we will both grow together.
-            </p>
-    </div>
+      <FadeInComponent
+        delay={0.5}
+        duration={1.2}
+        direction='up'
+        type='tween'
+        viewport={{ once: true }}
+        className=''>
+        I speak English as Second and Official Language and have both B.A. and M.A. in English Language; but speak Yoruba, an indigenous language in Nigeria, as First Language.
+      </FadeInComponent>
+
+      <FadeInComponent
+        delay={0.5}
+        duration={1.2}
+        direction='up'
+        type='tween'
+        viewport={{ once: true }}
+        className=''>
+          My interest in human languages, arts, creativity and logical reasoning led to interest in computer languages, software design and creation.
+        I self-trained for some years before having the honour of being part of the Federal Government of Nigeria&apos;s Three Million Technical Training (3MTT) programme, in which I opted for studying Software Development.
+      </FadeInComponent>
+
+      <FadeInComponent
+        delay={0.5}
+        duration={1.2}
+        direction='up'
+        type='tween'
+        viewport={{ once: true }}
+        className=''>
+        During the 3MTT programme, I had hands-on training and practical experience under CAD Consultant, a tech company in Port Harcourt, Nigeria.
+      </FadeInComponent>
+
+      <FadeInComponent
+        delay={0.5}
+        duration={1.2}
+        direction='up'
+        type='tween'
+        viewport={{ once: true }}
+        className=''>
+        Currently, I devote my attention, energy and skills to creating software solutions for businesses, particularly start-up, and individuals; through my own start-up, PragmaTech Nigeria.
+        I myself being an owner of a start-up, I perfeclty understand the challenges start-ups face, particularly financially. Among other things, a start-up needs an effective and elegant platform for visibility and at an affordable price. And that&apos;s what I&apos;m here to offer you.
+      </FadeInComponent>
+      
+      <FadeInComponent
+        delay={0.5}
+        duration={1.2}
+        direction='up'
+        type='tween'
+        viewport={{ once: true }}
+        className=''>
+        Bring your ideas and I will bring my skills. Together, we will create a software solution that will help your bussiness and we will both grow together.
+      </FadeInComponent>
+    </StaggerContainer>
   )
 }
 

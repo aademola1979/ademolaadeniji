@@ -2,6 +2,7 @@ import SecondSection from "./module/landing-page/SecondSection";
 import FirstSection from "./module/landing-page/FirstSection";
 import CallToAction from "./module/landing-page/CTA"
 import siteMetadata from "@/lib/utility/siteMetadata";
+import { FadeInComponent } from "./module/AnimatedContainer";
 
 
 export default function Home() {
@@ -31,9 +32,16 @@ export default function Home() {
           <FirstSection />
           <SecondSection />
         </div> 
-        <div className="flex items-center justify-center  h-fit mx-4 my-4 sm:mx-16 lg:hidden rounded-lg bg-white shadow-md">
+        <FadeInComponent
+        delay={0.5}
+        duration={1.2}
+        direction='up'
+        type='tween'
+        viewport={{ once:true }}
+        
+        className="flex items-center justify-center  h-fit mx-4 my-4 sm:mx-16 lg:hidden rounded-lg bg-white shadow-md">
           <CallToAction />
-        </div>
+        </FadeInComponent>
       </main>
     </>
   );

@@ -3,9 +3,9 @@
 const InsightRoll = () => {
 
     const insights = [
-        'If your idea or solution is meant to run on web, then count me in.',
-        'Your fantastic idea plus my skill equals real success stories.',
-        '\Let\'s jointly make the stories!',
+        'If \it\'s going to run on web, then \it\'s my job.',
+        'Your fantastic idea plus my skill equals a solution.',
+        '\Let\'s jointly build success stories!',
 
     ];
 
