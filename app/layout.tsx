@@ -55,7 +55,7 @@ export const metadata = {
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={`mana-gradient`}>
+      <body className={`mana-gradient grid !max-w-[100vw]`}>
         <Header />
         {children}
         <Footer/>

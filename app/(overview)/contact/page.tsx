@@ -2,7 +2,7 @@
 
 const ContactPage = () => {
   return (
-    <main>ContactPage</main>
+    <main className="container-px">ContactPage</main>
   )
 }
 

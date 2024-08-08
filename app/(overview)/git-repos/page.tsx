@@ -2,7 +2,7 @@
 
 const GitRepoPage = () => {
   return (
-    <main>Git repository</main>
+    <main className="container-px">Git repository</main>
   )
 }
 

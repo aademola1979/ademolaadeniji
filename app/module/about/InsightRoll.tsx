@@ -10,7 +10,7 @@ const InsightRoll = () => {
     ];
 
     return (
-        <div className="w-full logo mt-4 text-white whitespace-nowrap overflow-hidden ">
+        <div className="w-full logo mt-4 text-white whitespace-nowrap absolute top-16 overflow-hidden ">
             <div className="animate-roll py-3 flex justify-center items-center w-full font-semibold tracking-wider text-base">
                 {
                     insights.map((item, i) =>(

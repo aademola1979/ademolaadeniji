@@ -8,12 +8,18 @@ import {
 import { MenuIcon } from "lucide-react"
 import Link from "next/link"
 import Logo from "../Logo"
-import { FadeInComponent} from "../AnimatedContainer"
+import { FadeInComponent } from "../AnimatedContainer"
 import { once } from "events"
+import SocialMedia from "../landing-page/SocialMedia"
 
 
 
 const MobileNav = () => {
+  type Item={
+    text:string,
+    link: string,
+    icon?: React.ReactNode
+  }
   const navItmes = [
     {
       text: "Home",
@@ -43,7 +49,7 @@ const MobileNav = () => {
       link: "/git-repos",
       icon: ""
     },
-    
+
   ]
   const [open, setOpen] = useState(false)
 
@@ -57,14 +63,10 @@ const MobileNav = () => {
     <div>
       <Sheet>
         <SheetTrigger asChild className="" onClick={toggleMobileNav}><MenuIcon className="section-titles block sm:hidden cursor-pointer" /></SheetTrigger>
-        <SheetContent side="left" onClick={toggleMobileNav} className="min-h-[100vh] overflow-x-auto">
-          <SheetClose asChild>
-            <Logo className="h-4 w-4 py-2 mb-4" />
-          </SheetClose>
-
-          <div className="pt-8 grid gap-2">
+        <SheetContent side="left" onClick={toggleMobileNav} className="min-h-[100vh] overflow-x-auto pt-[4rem] flex flex-col justify-between gap-0">
+          <div className=" grid gap-4">
             {
-              navItmes.map((item, i) => (
+              navItmes.map((item:Item, i) => (
                 <SheetClose key={i} asChild>
 
 
@@ -75,7 +77,7 @@ const MobileNav = () => {
                       delay={i * 0.1}
                       direction='right'
                       duration={1}
-                      viewport={{ once:true }}
+                      viewport={{ once: true }}
 
                     >
                       {item.text}
@@ -86,6 +88,9 @@ const MobileNav = () => {
                 </SheetClose>
               ))
             }
+          </div>
+          <div className="self-end flex justify-center w-full">
+            <SocialMedia />
           </div>
         </SheetContent>
       </Sheet>

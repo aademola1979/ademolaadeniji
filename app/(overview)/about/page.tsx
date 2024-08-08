@@ -1,4 +1,4 @@
-import AboutHeader from "../../module/about/AboutHeader"
+
 import AboutSectionOne from "../../module/about/AboutSectionOne"
 import SkillSets from "../../module/about/skill-sets"
 
