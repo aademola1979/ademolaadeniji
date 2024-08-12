@@ -11,7 +11,7 @@ const AboutIntro = () => {
         type='tween'
         viewport={{ once: true }}
         className=''>
-        I am Ademola Adeniji, a software developer, specialising in web application creation.
+        I am Ademola Adeniji, a software developer, particularly skilled at Javascript and Python; and specialising in web application creation.
       </FadeInComponent>
 
       <FadeInComponent

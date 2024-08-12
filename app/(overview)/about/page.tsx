@@ -1,7 +1,7 @@
 
 import CallToAction from "@/app/module/landing-page/CTA"
 import AboutSectionOne from "../../module/about/AboutSectionOne"
-import Call2Action from "@/app/module/about/CallToAction"
+
 
 
 const AboutPage = () => {
