@@ -11,7 +11,7 @@ const AboutIntro2 = () => {
         type='tween'
         viewport={{ once: true }}
         className=''>
-        Currently, I devote my attention, energy and skills to creating web applications for individuals, organisations and businesses.
+        Currently, I focus my energy and skills on creating web applications for individuals, organisations, and businesses. I believe that every entity deserves an efficient, elegant, and affordable platform for visibility, and that's exactly what I offer.
       </FadeInComponent>
       <FadeInComponent
         delay={0.2}
@@ -20,7 +20,7 @@ const AboutIntro2 = () => {
         type='tween'
         viewport={{ once: true }}
         className=''>
-        Every business, organisation or individual needs an efficient, elegant yet affordable platform for visibility. That&apos;s exactly what I offer.
+        Whether you're looking to enhance your online presence or need a custom web solution, I am here to help you achieve your goals with precision and creativity.
       </FadeInComponent>
     </StaggerContainer>
   )

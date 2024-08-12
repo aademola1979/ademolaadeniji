@@ -11,9 +11,8 @@ const AboutIntro = () => {
         type='tween'
         viewport={{ once: true }}
         className=''>
-        I am Ademola Adeniji, a software developer, particularly skilled at Javascript and Python; and specialising in web application creation.
+        I am Ademola Adeniji, a software developer with a strong proficiency in JavaScript and Python, specialising in web application development. 
       </FadeInComponent>
-
       <FadeInComponent
         delay={0.2}
         duration={1.2}
@@ -21,8 +20,9 @@ const AboutIntro = () => {
         type='tween'
         viewport={{ once: true }}
         className=''>
-        As a person with quests for knowledge and creative ventures, I participated in the <span className="font-bold text-orange-500">Federal Government of Nigeria&apos;s Three Million Technical Training (3MTT)</span>. During the programme, I studied Software Development and had hands-on training and experience under <span className="font-bold text-orange-500">CAD Consultant</span>, a tech company in Port Harcourt, Rivers State, Nigeria.
+        My passion for knowledge and creativity led me to participate in the Federal Government of Nigeria's Three Million Technical Training (3MTT) programme. During this programme, I gained valuable hands-on experience in software development with CAD Consultant, a tech company based in Port Harcourt, Rivers State, Nigeria.
       </FadeInComponent>
+      
     </StaggerContainer>
   )
 }
