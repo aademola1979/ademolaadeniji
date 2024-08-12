@@ -92,7 +92,7 @@ body{
 }
 
 .container-px{
-    @apply px-6 sm:px-12 md:px-16 lg:px-20
+    @apply px-4 sm:px-12 md:px-16 lg:px-20
 }
 .bg-gray{
     background-color: var(--clr-slate-100);
@@ -601,3 +601,23 @@ footer p {
     height: 400px;
     position: relative;
 }
+
+
+.switch-container{
+  display: grid;   
+  grid-template-areas: 'switch-image' 'switch-text';
+  gap: 1em;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+  .switch-container{
+      grid-template-areas:'switch-text switch-image';
+      gap: 1rem;    
+  }
+  
+}
+
+.switch-image{grid-area: switch-image;}
+.switch-text{grid-area: switch-text;}

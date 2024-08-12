@@ -3,7 +3,7 @@ import { FadeInComponent, StaggerContainer } from "../AnimatedContainer"
 
 const AboutIntro = () => {
   return (
-    <StaggerContainer className="container-px grid text-white/80 gap-[4rem] font-medium text-base lg:text-lg font-mono">
+    <StaggerContainer className="container-px grid text-white/80 gap-[4rem] font-medium text-base lg:text-lg font-mono switch-text">
       <FadeInComponent
         delay={0.2}
         duration={1.2}
@@ -21,17 +21,7 @@ const AboutIntro = () => {
         type='tween'
         viewport={{ once: true }}
         className=''>
-           As a person with quests for knowledge and ventures for creativities, I participated in the <span className="font-bold text-orange-500">Federal Government of Nigeria&apos;s Three Million Technical Training (3MTT)</span>. During the programme, I studied Software Development and had hands-on training and experience under <span className="font-bold text-orange-500">CAD Consultant</span>, a tech company in Port Harcourt, Rivers State, Nigeria. 
-      </FadeInComponent>
-       
-      <FadeInComponent
-        delay={0.2}
-        duration={1.2}
-        direction='up'
-        type='tween'
-        viewport={{ once: true }}
-        className=''>
-        Currently, I devote my attention, energy and skills to creating web applications for individuals, organisations and businesses. Among other things, every business, organisation or individual needs an efficient, elegant yet affordable platform for visibility. That&apos;s exactly what I offer.
+        As a person with quests for knowledge and creative ventures, I participated in the <span className="font-bold text-orange-500">Federal Government of Nigeria&apos;s Three Million Technical Training (3MTT)</span>. During the programme, I studied Software Development and had hands-on training and experience under <span className="font-bold text-orange-500">CAD Consultant</span>, a tech company in Port Harcourt, Rivers State, Nigeria.
       </FadeInComponent>
     </StaggerContainer>
   )

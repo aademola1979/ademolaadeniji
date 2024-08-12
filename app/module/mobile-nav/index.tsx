@@ -1,15 +1,15 @@
 'use client'
-import { useState } from "react"
+import { useState } from "react";
 import {
   Sheet, SheetTrigger, SheetContent,
   SheetClose,
 
-} from "@/components/ui/sheet"
-import { MenuIcon } from "lucide-react"
-import Link from "next/link"
-import Logo from "../Logo"
-import { FadeInComponent } from "../AnimatedContainer"
-import { once } from "events"
+} from "@/components/ui/sheet";
+import { MenuIcon } from "lucide-react";
+import Link from "next/link";
+import Logo from "../Logo";
+import { FadeInComponent } from "../AnimatedContainer";
+import { usePathname } from "next/navigation";
 import SocialMedia from "../landing-page/SocialMedia"
 
 
@@ -57,12 +57,13 @@ const MobileNav = () => {
 
   //const closeMobileNav = () => setOpen(false)
   const openMobileNave = () => setOpen(true)
+  const pathName = usePathname()
 
 
   return (
     <div>
       <Sheet>
-        <SheetTrigger asChild className="" onClick={toggleMobileNav}><MenuIcon className="section-titles block sm:hidden cursor-pointer" /></SheetTrigger>
+        <SheetTrigger asChild className="" onClick={toggleMobileNav}><MenuIcon className="section-titles block lg:hidden cursor-pointer" /></SheetTrigger>
         <SheetContent side="left" onClick={toggleMobileNav} className="min-h-[100vh] overflow-x-auto pt-[4rem] flex flex-col justify-between gap-0">
           <div className=" grid gap-4">
             {
@@ -72,7 +73,7 @@ const MobileNav = () => {
 
                   <Link href={item.link} className="text-black/60 hover:text-black text-lg font-medium">
                     <FadeInComponent
-                      className="text-lg font-medium"
+                      className={`${pathName === item.link ? "bg-orange-200" : ""} text-lg font-medium p-1 rounded`}
                       type='spring'
                       delay={i * 0.1}
                       direction='right'

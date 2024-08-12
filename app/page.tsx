@@ -28,23 +28,23 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-    <main className=" container-px py-4 grid !min-w-full !max-w-full">
-      <div className="relative">
-        <div className="main-content mb-4">
-          <FirstSection />
-          <SecondSection />
-        </div> 
-        <FadeInComponent
-        delay={0.5}
-        duration={1.2}
-        direction='up'
-        type='tween'
-        viewport={{ once:true }}
-        className="flex items-center justify-center  h-fit mx-4 my-4 sm:mx-16 lg:hidden rounded-lg bg-white shadow-md">
-          <CallToAction />
-        </FadeInComponent>
-      <BlurBgComponent /> 
-      </div>
+      <main className=" container-px py-4 grid !min-w-full !max-w-full">
+        <div className="relative">
+          <div className="main-content mb-4">
+            <FirstSection />
+            <SecondSection />
+          </div>
+          <FadeInComponent
+            delay={0.5}
+            duration={1.2}
+            direction='up'
+            type='tween'
+            viewport={{ once: true }}
+            className="flex items-center justify-center  h-fit mx-4 my-4 sm:mx-16 lg:hidden rounded-lg bg-white shadow-md">
+            <CallToAction />
+          </FadeInComponent>
+          <BlurBgComponent />
+        </div>
       </main>
     </>
   );

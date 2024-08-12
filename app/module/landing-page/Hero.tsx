@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
 import {FadeInComponent} from '@/app/module/AnimatedContainer'
-import { once } from "events"
+
 
 const Hero = () => {
   return (

@@ -1,3 +1,4 @@
+'use client'
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -6,27 +7,34 @@ import {
     BreadcrumbSeparator,
   } from "@/components/ui/breadcrumb"
  
-
+import { usePathname } from "next/navigation";
 
 
    function MainNav() {
+
+  const pathName = usePathname();
+
 
     
 
     return (
     
-      <Breadcrumb className="hidden fixed top-2 right-1/2 translate-x-1/2 bg-white/80 backdrop-blur-md sm:flex items-center justify-center border rounded-full px-8 py-3 border-solid border-black/40 mt-2">
+      <Breadcrumb className="hidden fixed top-2 right-1/2 translate-x-1/2 bg-white/80 backdrop-blur-md lg:flex items-center justify-center border rounded-full px-8 py-3 border-solid border-black/40 mt-2">
         <BreadcrumbList>
                 <BreadcrumbItem  className="text-base">
-                    <BreadcrumbLink href='/'>Home</BreadcrumbLink>
+                    <BreadcrumbLink href='/' className={`${pathName === '/' ? "text-orange-400" : ""}`}>Home</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem  className="text-base">
-                    <BreadcrumbLink href='/about'>About Me</BreadcrumbLink>
+                    <BreadcrumbLink href='/about' className={`${pathName === '/about' ? "text-orange-400" : ""}`}>About Me</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem  className="text-base">
+                    <BreadcrumbLink href='/my-works' className={`${pathName === '/my-works' ? "text-orange-400" : ""}`}>My Works</BreadcrumbLink>
                 </BreadcrumbItem> 
                 <BreadcrumbSeparator />
                 <BreadcrumbItem  className="text-base">
-                    <BreadcrumbLink href='/contact'>Contact</BreadcrumbLink>
+                    <BreadcrumbLink href='/contact' className={`${pathName === '/contact' ? "text-orange-400" : ""}`}>Contact</BreadcrumbLink>
                 </BreadcrumbItem>
                 
         </BreadcrumbList>
