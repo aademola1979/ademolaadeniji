@@ -7,7 +7,7 @@ import { FadeInComponent } from "../AnimatedContainer"
 const DesktopOnly = () => {
     return (
         <FadeInComponent
-        delay={0.5}
+        delay={0.2}
         duration={1.2}
         direction='down'
         type='tween'

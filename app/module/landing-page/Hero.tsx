@@ -6,7 +6,7 @@ import { once } from "events"
 const Hero = () => {
   return (
     <FadeInComponent 
-        delay={0.5}
+        delay={0.2}
         duration={1.2}
         direction='right'
         type='tween'

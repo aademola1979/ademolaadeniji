@@ -1,13 +1,12 @@
 
+import CallToAction from "@/app/module/landing-page/CTA"
 import AboutSectionOne from "../../module/about/AboutSectionOne"
-import SkillSets from "../../module/about/skill-sets"
 
 
 const AboutPage = () => {
   return (
-    <main className="mt-[4rem]">
+    <main className=" relative logo text-white border-t-2 border-white">
       <AboutSectionOne />
-      <SkillSets />
     </main>
   )
 }

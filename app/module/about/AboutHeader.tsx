@@ -4,8 +4,8 @@ import { FadeInComponent, StaggerContainer } from "../AnimatedContainer"
 const AboutHeader = () => {
   return (
     <StaggerContainer
-      className="w-full my-[2rem] grid justify-center items-center max-h-full
-    lg:flex lg:mt-[3rem] gap-2 mb-[4rem] container-px font-bold text-5xl italic font-mono">
+      className="w-full grid justify-center items-center max-h-full pt-8
+    lg:flex gap-2 mb-[4rem] container-px font-bold text-5xl italic font-mono text-orange-500">
       <FadeInComponent
         delay={0.5}
         duration={1.2}

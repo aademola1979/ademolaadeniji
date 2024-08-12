@@ -3,6 +3,7 @@ import FirstSection from "./module/landing-page/FirstSection";
 import CallToAction from "./module/landing-page/CTA"
 import siteMetadata from "@/lib/utility/siteMetadata";
 import { FadeInComponent } from "./module/AnimatedContainer";
+import BlurBgComponent from "./module/BlurBgComponent";
 
 
 export default function Home() {
@@ -27,8 +28,9 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-    <main className=" py-4 grid !max-w-full">
-        <div className="main-content mb-4 container-px">
+    <main className=" container-px py-4 grid !min-w-full !max-w-full">
+      <div className="relative">
+        <div className="main-content mb-4">
           <FirstSection />
           <SecondSection />
         </div> 
@@ -38,10 +40,11 @@ export default function Home() {
         direction='up'
         type='tween'
         viewport={{ once:true }}
-        
         className="flex items-center justify-center  h-fit mx-4 my-4 sm:mx-16 lg:hidden rounded-lg bg-white shadow-md">
           <CallToAction />
         </FadeInComponent>
+      <BlurBgComponent /> 
+      </div>
       </main>
     </>
   );
