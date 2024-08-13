@@ -20,7 +20,7 @@ const AboutIntro = () => {
         type='tween'
         viewport={{ once: true }}
         className=''>
-        My passion for knowledge and creativity led me to participate in the Federal Government of Nigeria's Three Million Technical Training (3MTT) programme. During this programme, I gained valuable hands-on experience in software development with CAD Consultant, a tech company based in Port Harcourt, Rivers State, Nigeria.
+        My passion for knowledge and creativity led me to participate in the Federal Government of Nigeria&apos;s Three Million Technical Training (3MTT) programme. During this programme, I gained valuable hands-on experience in software development with CAD Consultant, a tech company based in Port Harcourt, Rivers State, Nigeria.
       </FadeInComponent>
       
     </StaggerContainer>
