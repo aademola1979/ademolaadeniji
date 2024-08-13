@@ -56,7 +56,7 @@ export const metadata = {
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <body className={` grid !max-w-[100vw]`}>
+      <body className={`logo grid !max-w-[100vw]`}>
         <Header />
         {children}
         <Footer/>     
