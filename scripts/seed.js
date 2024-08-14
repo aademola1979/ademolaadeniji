@@ -1,5 +1,18 @@
 const {db} = require('@vercel/postgres');
-import  messages from '@/../../lib/placeholder-data';
+
+ const messages = [
+    {
+        name:'Janet Ajuyi',
+        email: 'jjajuyi@gmail.com',
+        content: 'I\'ll you to contact me to discuss price. Thank you.'
+    },
+
+    {
+        name:'Mosunmola Ademola',
+        email: 'mosun@yahoo.com',
+        content: 'I have some offer for you. Please, contact me. Thank you.'
+    }
+]
 
 
 
@@ -11,7 +24,7 @@ async function seedMessages(client) {
       const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS messages (
       id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-      name VARCAR(99) NOT NULL,
+      name VARCHAR(99) NOT NULL,
       email VARCHAR(99) NOT NULL,
       content VARCHAR(255),
       date DATE NOT NULL

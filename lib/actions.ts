@@ -7,10 +7,6 @@ import { redirect } from 'next/navigation';
 import {z} from 'zod';
 import { Message } from './typeDefinitions';
 
-
-
-
-
 const FormSchema = z.object({
 
     name: z.string({invalid_type_error:"Please, enter a name of at least three characters."}),
@@ -21,7 +17,6 @@ const FormSchema = z.object({
     content: z.string(),
     
 });
-
 
 
 export async function createMessage(message:Message){
@@ -38,19 +33,21 @@ export async function createMessage(message:Message){
 
     const {name, email, content} = validatedFields.data;
     const date = new Date().toISOString().split('T')[0];
-    const id = short.uuid.toString();
+   
  
-
     try {
         await sql`
-        INSERT INTO messages (id, name, email, content, date) VALUES (${id}, ${name}, ${email}, ${content}, ${date} )
-        `
-        
+        INSERT INTO messages (name, email, content, date) VALUES (${name}, ${email}, ${content}, ${date} )
+        `;
     } catch (error) {
+
+    console.log(error)
         return {message: 'Something went wrong. Please, try again.'}
         
     }
+
+    return{message: 'Message sent successfully!'}
    
-    revalidatePath('/contact');
-    redirect('/contact');
+    /*revalidatePath('/contact');
+    redirect('/contact');*/
 }

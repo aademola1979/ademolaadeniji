@@ -1,13 +1,11 @@
-import { FadeInComponent, StaggerContainer } from "../AnimatedContainer"
+
 
 
 const AboutImage = () => {
     return (
         
-            <div className='grid justify-center items-center  switch-image rounded-md'>
-                <img src="/images/socialBanner.png" alt="banner" height={250} width={240}
-                    className="w-[200px] h-[200px] lg:h-[350px] lg:w-[350px] rounded-md" />
-
+            <div className='grid transform pt-4 rico text-3xl lg:text-5xl lg:pt-12 pb-12 skew-y-12 justify-center items-center  switch-image rounded-md'>
+                I want to how this message displays
             </div>
         
     )
