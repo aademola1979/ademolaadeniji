@@ -14,7 +14,7 @@ const Header = () => {
         
         <MobileNav/>
         <div className='hidden lg:block'>
-        <SocialMedia />
+        <SocialMedia x='fill-white'/>
 
         </div>
         

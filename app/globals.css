@@ -632,3 +632,19 @@ footer p {
 .rico-title{
   color: rgb(248, 203, 120);
 }
+
+
+@media screen and (min-width: 1024px) {
+    
+  .offer{
+    transform: skewX(30deg, 30deg);
+  
+  }
+  
+}
+
+
+.offer{
+  transform: skew(30deg, 30deg);
+
+}

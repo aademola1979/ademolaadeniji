@@ -1,11 +1,13 @@
+import ContactForm from "./ContactForm"
 
 
-const index = () => {
+const ContactFormContainer = () => {
   return (
-    <div>
+    <div className="w-full h-full">
+      <ContactForm />
         
     </div>
   )
 }
 
-export default index
+export default ContactFormContainer

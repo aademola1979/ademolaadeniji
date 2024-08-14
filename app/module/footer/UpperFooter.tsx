@@ -6,7 +6,7 @@ const UpperFooter = () => {
   return (
     <div className="pt-4 w-full flex justify-between">
       <Logo className="py-2 px-3"/>
-      <SocialMedia />
+      <SocialMedia x="fill-white"/>
     </div>
   )
 }

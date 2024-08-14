@@ -28,7 +28,7 @@ const Offers = () => {
         direction='up'
         type='tween'
         viewport={{ once:true }}
-         className="py-[2rem] bg-white/90 shadow-md grid items-center rounded-md ">
+         className="py-[2rem] bg-white/90 shadow-md grid items-center rounded-md">
             <h4 className="text-2xl font-bold text-center sm:text-4xl section-titles mb-4">What I Offer</h4>
             <div>
                 <p className="text-[rgb(150, 150, 150)] text-base mb-2 sm:text-lg pr-0  text-gray-800 container-px">

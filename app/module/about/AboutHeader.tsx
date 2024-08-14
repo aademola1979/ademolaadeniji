@@ -5,7 +5,7 @@ const AboutHeader = () => {
   return (
     <StaggerContainer
       className="w-full grid justify-center items-center max-h-full pt-8
-    lg:flex lg:flex-row gap-0 lg:gap-2 mb-[4rem] container-px font-bold text-[42px] lg:text-[82px] italic font-mono text-orange-200">
+    lg:flex lg:flex-row gap-0 lg:gap-8 mb-[4rem] container-px font-bold text-[42px] lg:text-[82px] italic font-mono text-orange-200">
       <FadeInComponent
         delay={0.5}
         duration={1.2}

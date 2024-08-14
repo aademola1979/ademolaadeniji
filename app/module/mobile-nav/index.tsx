@@ -92,7 +92,7 @@ const MobileNav = () => {
             }
           </div>
           <div className="self-end flex justify-center w-full">
-            <SocialMedia />
+            <SocialMedia x=""/>
           </div>
         </SheetContent>
       </Sheet>
