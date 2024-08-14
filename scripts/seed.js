@@ -11,20 +11,22 @@ async function seedMessages(client) {
       const createTable = await client.sql`
       CREATE TABLE IF NOT EXISTS messages (
       id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-      name VARCAR(255) NOT NULL,
-      email VARCHAR(255) NOT NULL,
+      name VARCAR(99) NOT NULL,
+      email VARCHAR(99) NOT NULL,
       content VARCHAR(255),
       date DATE NOT NULL
     );`;
   
       console.log(`Created "messages" table`);
+
+      const date = new Date().toISOString().split('T')[0];
   
       // Insert data into the "messages" table
       const insertedMessages = await Promise.all(
         messages.map(
           (message) => client.sql`
           INSERT INTO messages (name, email, content, date)
-          VALUES (${message.name}, ${message.email}, ${message.content}, ${message.date})
+          VALUES (${message.name}, ${message.email}, ${message.content}, ${date})
           ON CONFLICT (id) DO NOTHING;
         `,
         ),
