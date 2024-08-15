@@ -45,12 +45,6 @@ const MobileNav = () => {
       icon: ""
     },
 
-    {
-      text: "Git Repo",
-      link: "/git-repos",
-      icon: ""
-    },
-
   ]
   const [open, setOpen] = useState(false)
 

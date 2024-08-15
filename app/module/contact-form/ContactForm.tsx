@@ -13,11 +13,9 @@ import {
     FormField,
 } from "@/components/ui/form"
 import { Button } from '@/components/ui/button';
-import { Toast, ToastDescription, ToastClose } from "@/components/ui/toast";
 import { useState } from "react";
 import { createMessage } from "@/lib/actions";
-import { Message } from "@/lib/typeDefinitions";
-import { useFormState } from "react-dom";
+
 
 
 
@@ -36,6 +34,8 @@ const formSchema = z.object({
     ).min(5, {
         message: "Email must be at least 5 characters.",
     }).trim(),
+
+    phone: z.string(),
 
     content: z.string({ required_error: "Message is required" }),
 
@@ -71,6 +71,7 @@ const ContactForm = () => {
         defaultValues: {
             name: "",
             email: "",
+            phone:"",
             content: "",
 
         },
@@ -129,8 +130,24 @@ const ContactForm = () => {
 
                                 <FormControl>
                                     <Input
-                                        placeholder="Enter your email"
+                                        placeholder="Enter your email."
                                         type="text" {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
+
+<FormField
+                        control={form.control}
+                        name="phone"
+                        render={({ field }) => (
+                            <FormItem>
+
+                                <FormControl>
+                                    <Input
+                                        placeholder="Enter your phone number."
+                                        type="tel" {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -146,7 +163,7 @@ const ContactForm = () => {
 
                                 <FormControl>
                                     <Textarea
-                                        placeholder="Enter your message or question"
+                                        placeholder="Enter your message or question if any."
                                         {...field}
                                         className="text-black/80" />
                                 </FormControl>

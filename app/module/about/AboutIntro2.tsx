@@ -3,7 +3,7 @@ import { FadeInComponent, StaggerContainer } from "../AnimatedContainer"
 
 const AboutIntro2 = () => {
   return (
-    <StaggerContainer className="container-px grid rico gap-[2rem] font-medium text-[20px] lg:text-[22px] font-mono pt-[2rem]">
+    <StaggerContainer className="container-px grid rico gap-[2rem] font-medium text-[20px] lg:text-[22px] font-mono pt-[2rem] pb-[2rem]">
         <FadeInComponent
         delay={0.2}
         duration={1.2}

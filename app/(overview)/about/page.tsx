@@ -6,9 +6,9 @@ import AboutSectionOne from "../../module/about/AboutSectionOne"
 
 const AboutPage = () => {
   return (
-    <main className=" relative logo text-white border-t-2 border-white">
+    <main className=" relative logo text-white mt-1">
       <AboutSectionOne />
-      <div className="bg-white rounded-t-md bg-white/60">
+      <div className="rounded-t-md bg-white py-[4rem]">
       <CallToAction />
       </div>
       

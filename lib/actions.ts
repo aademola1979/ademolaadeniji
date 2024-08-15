@@ -14,6 +14,7 @@ const FormSchema = z.object({
         invalid_type_error:"Email is not valid.", 
         required_error:"Email is required"})
         .email(),
+    phone: z.string(),
     content: z.string(),
     
 });
@@ -31,13 +32,13 @@ export async function createMessage(message:Message){
 
     }
 
-    const {name, email, content} = validatedFields.data;
+    const {name, email, phone, content} = validatedFields.data;
     const date = new Date().toISOString().split('T')[0];
    
  
     try {
         await sql`
-        INSERT INTO messages (name, email, content, date) VALUES (${name}, ${email}, ${content}, ${date} )
+        INSERT INTO messages (name, email, content, date) VALUES (${name}, ${email}, ${phone}, ${content}, ${date} )
         `;
     } catch (error) {
 

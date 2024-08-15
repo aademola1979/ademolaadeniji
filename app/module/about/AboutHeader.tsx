@@ -1,12 +1,12 @@
-import { FadeInComponent, StaggerContainer } from "../AnimatedContainer"
+import { FadeInComponent, StaggerContainer, ZoomInComponent } from "../AnimatedContainer"
 
 
 const AboutHeader = () => {
   return (
     <StaggerContainer
       className="w-full grid justify-center items-center max-h-full pt-8
-    lg:flex lg:flex-row gap-0 lg:gap-8 mb-[4rem] container-px font-bold text-[42px] lg:text-[82px] italic font-mono text-orange-200">
-      <FadeInComponent
+   gap-4 lg:gap-8 container-px font-bold text-[42px] lg:text-[82px] italic font-mono text-orange-200">
+      <ZoomInComponent
         delay={0.5}
         duration={1.2}
         direction='right'
@@ -14,9 +14,9 @@ const AboutHeader = () => {
         viewport={{ once: true }}
         className='py-0'>
         Nice
-      </FadeInComponent>
+      </ZoomInComponent>
 
-      <FadeInComponent
+      <ZoomInComponent
         delay={0}
         duration={1}
         direction='down'
@@ -24,10 +24,10 @@ const AboutHeader = () => {
         viewport={{ once: true }}
         className='py-0'>
         meeting
-      </FadeInComponent>
+      </ZoomInComponent>
 
       <div className="flex">
-        <FadeInComponent
+        <ZoomInComponent
           delay={0.5}
           duration={1.2}
           direction='left'
@@ -35,8 +35,8 @@ const AboutHeader = () => {
           viewport={{ once: true }}
           className='py-0'>
           you
-        </FadeInComponent>
-        <FadeInComponent
+        </ZoomInComponent>
+        <ZoomInComponent
           delay={0.5}
           duration={2}
           direction='left'
@@ -44,7 +44,7 @@ const AboutHeader = () => {
           viewport={{ once: true }}
           className='py-0'>
           !
-        </FadeInComponent>
+        </ZoomInComponent>
       </div>
     </StaggerContainer>
 

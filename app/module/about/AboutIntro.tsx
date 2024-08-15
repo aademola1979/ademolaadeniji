@@ -3,7 +3,7 @@ import { FadeInComponent, StaggerContainer } from "../AnimatedContainer"
 
 const AboutIntro = () => {
   return (
-    <StaggerContainer className="container-px grid rico gap-[2rem] font-medium text-[20px] lg:text-[22px] font-mono switch-text">
+    <StaggerContainer className="container-px grid rico gap-[2rem] pt-4 lg:pt-[4rem] font-medium text-[20px] lg:text-[22px] font-mono switch-text">
       <FadeInComponent
         delay={0.2}
         duration={1.2}
@@ -11,7 +11,7 @@ const AboutIntro = () => {
         type='tween'
         viewport={{ once: true }}
         className=''>
-        I am Ademola Adeniji, a software developer with a strong proficiency in JavaScript and Python, specialising in web application development. 
+        I am a software developer with a strong proficiency in JavaScript and Python, specialising in web application development. 
       </FadeInComponent>
       <FadeInComponent
         delay={0.2}
