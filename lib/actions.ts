@@ -42,12 +42,9 @@ export async function createMessage(message:Message){
     } catch (error) {
 
     console.log(error)
-        return {message: 'Something went wrong. Please, try again.'}
+        return {error: 'Something went wrong. Please, try again.'}
         
     }
-
-    return{message: 'Message sent successfully!'}
-   
-    /*revalidatePath('/contact');
-    redirect('/contact');*/
+    revalidatePath('/contact');
+    redirect('/contact');
 }

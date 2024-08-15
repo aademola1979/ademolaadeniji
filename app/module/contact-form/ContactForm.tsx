@@ -48,17 +48,17 @@ const ContactForm = () => {
     const [errors, setErrors] = useState({})
 
 
-    async function myOnSubmit(values: z.infer<typeof formSchema>, e: any) {
-        e.preventDefault()
+    async function myOnSubmit(values: z.infer<typeof formSchema>) {
+        
         setIsLoading(true)
         
         const result = await createMessage(form.getValues())
         if(result?.errors){
-            setMessage(result.message);
             setErrors(result.errors);
+            form.reset();
             return;
         }else{
-            setMessage(result.message);
+            setMessage('Message sent successfully');
             form.reset(form.getValues())
     
         }
