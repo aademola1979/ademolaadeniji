@@ -1,7 +1,7 @@
 'use client'
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, useFormContext } from "react-hook-form";
-import { any, object, string, z } from "zod";
+import { z } from "zod";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import {
@@ -15,6 +15,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { useState } from "react";
 import { createMessage } from "@/lib/actions";
+import { ZoomInComponent } from "../AnimatedContainer";
 
 
 
@@ -105,8 +106,17 @@ const ContactForm = () => {
             </div>
             <Form  {...form} >
                 <form onSubmit={form.handleSubmit(myOnSubmit)}
-                    className="grid gap-4 w-full min-w-[8rem] p-4 rounded-md max-w-[20rem]">
-                    <FormDescription className="text-base sm:text-xl mb-4 text-center text-bold rico">Fill the form and I&apos;ll reach you.</FormDescription>
+                    className="grid gap-4 w-full min-w-[8rem] rounded-md max-w-[20rem]">
+                        <ZoomInComponent 
+                        className=""
+                        delay={0.2}
+                        duration={1.5}
+                        viewport={{ once:true }}
+                        >
+                        <FormDescription className="text-base sm:text-xl text-center text-bold rico">Fill the form and I&apos;ll reach you.</FormDescription>
+                            
+                        </ZoomInComponent>
+                    
                     <FormField
                         control={form.control}
                         name="name"
@@ -171,9 +181,6 @@ const ContactForm = () => {
                             </FormItem>
                         )}
                     />
-
-
-
                     <Button type="submit" disabled={isLoading} className={`${isLoading ? "bg-gray-400" : ""}`}>Submit</Button>
 
                 </form>

@@ -12,7 +12,7 @@ const Hero = () => {
         type='tween'
         viewport={{ once:true }}
     className="relative overflow-hidden min-w-full h-[500px] sm:h-[600px] lg:h-[500px] rounded-sm">
-      <img src="/images/de-man-light.png" alt="Ademola" width={200} height={320} className="absolute top-0 left-0 rounded w-full h-full"/>
+      <img src="/images/de-man-light.png" alt="Ademola" width={200} height={320} className="absolute top-0 left-0 right-0 rounded min-w-full max-w-full h-full"/>
       <div className="relative mb-[1rem] mt-[18rem] sm:mt-[22rem] grid gap-4">
         <div className="hero-text-container grid lg:hidden rounded-lg">
           <p className="hero-text-name font-serif text-black cursor-pointer">Ademola Adeniji</p>

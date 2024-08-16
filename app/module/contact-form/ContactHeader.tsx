@@ -1,16 +1,19 @@
-import { StaggerContainer, ZoomInComponent } from "../AnimatedContainer"
+import { StaggerContainer, ZoomInComponent, ZoomOutComponent } from "../AnimatedContainer"
+import SocialMedia from "../landing-page/SocialMedia"
 
 
 const ContactHeader = () => {
   return (
-    <StaggerContainer className='rico text-3xl lg:text-5xl'>
-        <ZoomInComponent
-        className='text-center w-full italic'
+    <StaggerContainer className='rico text-xl lg:text-3xl'>
+     
+      <ZoomOutComponent
+        className='flex w-full justify-center'
         delay={0.2}
         duration={1}
-        >
-            Let&apos;s connect.
-        </ZoomInComponent>
+        viewport={{ once: true }}>
+        <SocialMedia x="fill-white" />
+      </ZoomOutComponent>
+      
     </StaggerContainer>
   )
 }

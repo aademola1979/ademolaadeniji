@@ -1,6 +1,6 @@
 'use client'
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, textVariant, textContainer, zoomIn, 
+import { fadeIn, staggerContainer, textVariant, textContainer, zoomIn, planetVariants,
   zoomOut, textVariant2, sidebarVaraints, navVariants, slidingVariants, slidingVariants2 } from "@/lib/motion";
 
 export const FadeInComponent = ({children, className, direction, type, delay,duration, ...props}) => {
@@ -184,7 +184,17 @@ export const ListVaraintComponent = ({children, direction,
     </motion.ul>
   )
 }
-
+export const SpringInVaraintComponent = ({children, direction,
+  delay, duration, className, ...props })=>{
+   return (
+     <motion.div
+     variants={planetVariants(direction, delay, duration)}
+     {...props}
+     className={`${className}`}>
+       {children}
+     </motion.div>
+   )
+ }
 export const SubmitBtnComponent = ({className, children, ...props}) =>{
   return(
     <motion.button 
