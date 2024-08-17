@@ -23,6 +23,4 @@ export const postMessage = async ({message}:{message:Props}) =>{
         return {message: 'Something went wrong. Please, try again.'}
         
     }
-
-
 }

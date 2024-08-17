@@ -31,29 +31,29 @@ export const FadeInComponent = ({children, className, direction, type, delay,dur
   }
   
 
- export const TextVariant = ({delay, children, className, ...props}) => {
+ export const TextVariantComponent = ({delay, children, className, ...props}) => {
     return (
-      <motion.div
+      <motion.span
                   variants={textVariant(delay)}
                   initial='hidden'
                   whileInView='show'
                   className={`${className}`}
                   {...props}>
                       {children}
-                  </motion.div>
+                  </motion.span>
     )
   }
 
-  export const TextVariant2 = ({delay, children, className, ...props}) => {
+  export const TextVariant2Component = ({ children, className, ...props}) => {
     return (
-      <motion.div
-                  variants={textVariant2(delay)}
+      <motion.span
+                  variants={textVariant2}
                   initial='hidden'
                   whileInView='show'
                   className={`${className}`}
                   {...props}>
                       {children}
-                  </motion.div>
+                  </motion.span>
     )
   }
   
@@ -61,14 +61,14 @@ export const FadeInComponent = ({children, className, direction, type, delay,dur
   
   export const TextContainer = ({children, className, ...props}) => {
       return (
-        <motion.div
+        <motion.p
                     variants={textContainer} 
                     initial='hidden'
                     whileInView='show'
                     className={`${className}`}
                     {...props}>
                       {children}
-                    </motion.div>
+                    </motion.p>
       )
     }
 

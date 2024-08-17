@@ -1,4 +1,4 @@
-import { StaggerContainer, ZoomInComponent, ZoomOutComponent } from "../AnimatedContainer"
+import { StaggerContainer, ZoomOutComponent } from "../AnimatedContainer"
 import SocialMedia from "../landing-page/SocialMedia"
 
 

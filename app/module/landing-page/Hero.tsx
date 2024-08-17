@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         <div className="flex w-full justify-around lg:hidden">
          <Link href='/about' className="hover:scale-105 btn py-4 w-[8rem] text-center text-base hero-btn btn-blue font-normal">About Me</Link>
-          <Link href='/my-works' className="hover:scale-105 btn hero-btn btn-outline py-4 w-[8rem] text-center text-base font-semibold">My Works</Link>
+          <Link href='/projects' className="hover:scale-105 btn hero-btn btn-outline py-4 w-[8rem] text-center text-base font-semibold">Projects</Link>
         </div>
 
       </div>

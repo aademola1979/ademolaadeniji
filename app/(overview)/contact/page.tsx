@@ -25,7 +25,7 @@ const ContactPage = () => {
          direction='down'
          type='tween'
          viewport={{ once:true }}
-         className="text-xl lg:text-4xl">Connect with me:</FadeInComponent>
+         className="text-xl lg:text-4xl">Let&apos;s connect!</FadeInComponent>
 
         </div>
       

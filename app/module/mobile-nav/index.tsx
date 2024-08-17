@@ -5,9 +5,7 @@ import {
   SheetClose,
 
 } from "@/components/ui/sheet";
-import { MenuIcon } from "lucide-react";
 import Link from "next/link";
-import Logo from "../Logo";
 import { FadeInComponent } from "../AnimatedContainer";
 import { usePathname } from "next/navigation";
 import SocialMedia from "../landing-page/SocialMedia";
@@ -40,8 +38,8 @@ const MobileNav = () => {
     },
 
     {
-      text: "My Works",
-      link: "/my-works",
+      text: "Projects",
+      link: "/projects",
       icon: ""
     },
 

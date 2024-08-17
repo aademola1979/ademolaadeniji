@@ -30,7 +30,7 @@ import { usePathname } from "next/navigation";
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem  className="text-base">
-                    <BreadcrumbLink href='/my-works' className={`${pathName === '/my-works' ? "text-orange-400" : ""}`}>My Works</BreadcrumbLink>
+                    <BreadcrumbLink href='/projects' className={`${pathName === '/projects' ? "text-orange-400" : ""}`}>Projects</BreadcrumbLink>
                 </BreadcrumbItem> 
                 <BreadcrumbSeparator />
                 <BreadcrumbItem  className="text-base">

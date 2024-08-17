@@ -20,7 +20,7 @@ const DesktopOnly = () => {
             </div>
             <div className="flex pt-[5rem] gap-8">
                 <Link href="/about" className="text-lg cursor-pointer text-center font-semibold w-[11rem] h-[4rem] flex justify-center items-center rounded-full btn-blue hover:scale-105 transition-all ease-in-out duration-200">About Me</Link>
-                <Link href="/my-works" className="text-lg cursor-pointer text-center font-semibold w-[11rem] h-[4rem] flex justify-center items-center rounded-full btn-outline hover:scale-105 transition-all ease-in-out duration-200">My Works</Link>
+                <Link href="/projects" className="text-lg cursor-pointer text-center font-semibold w-[11rem] h-[4rem] flex justify-center items-center rounded-full btn-outline hover:scale-105 transition-all ease-in-out duration-200">Projects</Link>
             </div>
         </FadeInComponent>
     )
