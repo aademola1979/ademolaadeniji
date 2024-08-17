@@ -2,7 +2,7 @@ export const workData = [
     {
         id:"work-1",
         title:"LitHub9ja",
-        description:"LitHub9ja, a blog site built to be easily navigated.",
+        description:"LitHub9ja, a blog site built to be to aid teaching and learning of Literature-in-English in Nigerian high schools. Easy navigation is prioritized.",
         imgUrl:"/images/lithub.png",
         category:"blog",
         siteUrl:"https://lithub9ja.vercel.app",
@@ -12,7 +12,7 @@ export const workData = [
     {
          id:"work-2",
         title:"Africare",
-        description:"Built to make health care accessible to many people across Africa.",
+        description:"Africare, a telemedcine site, being built to make health care accessible to many people across Africa.",
         imgUrl:"/images/africare.png",
         category:"Telemedicine",
         siteUrl:"https://africare-frontend.vercel.app/",
