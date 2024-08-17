@@ -585,7 +585,7 @@ footer p {
     width: 100%;
     top: 0px;
     left: 0px;
-    background-color: rgba(97, 0, 144, .25);
+    background-color: rgba(0, 0, 0, .4);
     color: white;
     display: flex;
     align-items: flex-end;
@@ -593,6 +593,8 @@ footer p {
     padding-bottom: 2rem;
     font-size: 2rem;
     font-style: italic;
+    z-index: 0;
+    border-radius: 24px;
 }
 
 .welcome-call-to-action{
@@ -636,6 +638,18 @@ footer p {
   color: rgb(218, 206, 186);
 }
 
+.project-category{
+  width: max-content;
+  margin-bottom: 0.5rem;
+}
+.project-img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 24px;
+}
 .active-work-card{
   flex: 3.5;
   
@@ -651,14 +665,43 @@ footer p {
 }
 
 .inactive-h3{
-  font-weight: 600;
+  font-weight: 700;
   position: absolute;
   z-index: 0;
   font-size: 18px;
-  padding-inline: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  left: 8;
+  color: rgb(245, 173, 41);
 }
 
+.title{
+  color: rgb(245, 173, 41);
+}
+.active-div{
+  position: absolute;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-block: 0.5rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  max-width: 100%;
+}
+
+.active-p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: whitesmoke;
+  
+}
 .project-card{
+  position: relative;
   height: 80px;
   min-width: 120px;
   justify-items: center;
@@ -668,6 +711,7 @@ footer p {
   transition-duration: 150ms;
   transition-duration: 0.7s;
   cursor: pointer;
+  border-radius: 24px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -681,10 +725,6 @@ footer p {
     transform-origin: 0 0;
   }
 
-
-
-
-
   .active-work-card{
     flex: 10;
    
@@ -696,18 +736,20 @@ footer p {
   }
 
 
-
   .inactive-h3{
     bottom: 5rem;
     rotate: -90deg;
-    font-size: 26px;
-    transform-origin: 0;
+    font-size: 26px;  
+  
   }
 
   .project-card{
     height: 400px;
+    transition-duration: 2s;
   
   }
+
+
   
   
 }
