@@ -646,7 +646,6 @@ footer p {
   position: absolute;
   height: 100%;
   width: 100%;
-  object-position: center;
   object-fit: cover;
   border-radius: 24px;
 }
@@ -745,7 +744,6 @@ footer p {
 
   .project-card{
     height: 400px;
-    transition-duration: 2s;
   
   }
 
