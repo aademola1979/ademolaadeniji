@@ -113,7 +113,7 @@ const ContactForm = () => {
                         duration={1.5}
                         viewport={{ once:true }}
                         >
-                        <FormDescription className="text-base sm:text-xl text-center text-bold rico">Fill the form and I&apos;ll reach you.</FormDescription>
+                        <FormDescription className="text-base sm:text-xl text-center text-bold rico">Or, fill the form and I&apos;ll reach you.</FormDescription>
                             
                         </ZoomInComponent>
                     

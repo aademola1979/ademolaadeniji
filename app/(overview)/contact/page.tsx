@@ -19,6 +19,7 @@ const ContactPage = () => {
           <Image src='/images/connect3.png' width={200} height={200} alt="connect"
             className="h-[4rem] w-[6rem] lg:h-[15rem] lg:w-[15rem]" />
         </SpringInVaraintComponent>
+        <div className="grid lg:flex gap-4 ">
         <FadeInComponent
          delay={0.5}
          duration={1}
@@ -26,15 +27,18 @@ const ContactPage = () => {
          type='tween'
          viewport={{ once:true }}
          className="text-xl lg:text-4xl">Let&apos;s connect!</FadeInComponent>
+         <ContactHeader />
 
+        </div>
+       
         </div>
       
         <div className="flex-1 block">
           <ContactFormContainer />
         </div>
       </div>
-      <div className="text-center w-full rico">OR</div>
-      <ContactHeader />
+   
+      
     </StaggerContainer>
   )
 }
