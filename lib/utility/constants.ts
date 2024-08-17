@@ -12,7 +12,7 @@ export const workData = [
     {
          id:"work-2",
         title:"Africare",
-        description:"Africare, a telemedcine site, being built in conjunction with a team to make health care accessible to many people across Africa.",
+        description:"Africare, a telemedicine site, being built in conjunction with a team to make health care accessible to many people across Africa.",
         imgUrl:"/images/africare.png",
         category:"Telemedicine",
         siteUrl:"https://africare-frontend.vercel.app/",

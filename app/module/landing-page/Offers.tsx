@@ -6,7 +6,7 @@ const Offers = () => {
             text: "e-commerce applications,"
         },
         {
-            text: "school and educational institution web applications,"
+            text: "school and other educational institution web applications,"
         },
         {
             text: "blog sites,"
