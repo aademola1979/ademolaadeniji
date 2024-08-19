@@ -328,6 +328,76 @@ footer p {
 .logo{
     background-color: var(--clr-dark-blue);
 }
+
+/*+++++++++++++++++++++input*/
+.custom-input-container{
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  border: 1px;
+  border-radius: 24px;
+}
+
+.custom-input{
+  padding-top: 1rem;
+  padding-bottom: 0.25;
+  display: block;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0%;
+  background-color: whitesmoke;
+  border-width: 1px;
+  appearance: none;
+  border-color: rgb(218, 206, 186);
+  border-radius: 8px;
+}
+
+.custom-input:focus{
+  outline: none;
+  right: 0;
+  border-color: black;
+
+}
+
+.input-error{
+  border: rgba(244, 63, 94);
+
+}
+
+.input-error:focus{
+  border: rgba(244, 63, 94);
+}
+
+.input-label{
+  margin-left: 12px;
+  margin-right: 12px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  position: absolute;
+  z-index: 0;
+  color: gray;
+}
+
+.input-label{@apply !top-3}
+
+.input-label-error{
+  color: rgb(244, 63, 94);
+
+}
+
+.required{
+  color: rgb(244, 63, 94);
+}
+
+.eye{
+  @apply text-gray-400 px-4 focus:outline-none transition-all duration-150 outline-none focus:text-gray-700 absolute right-0 top-3
+}
+
 /*
 @media screen{
 
@@ -595,6 +665,17 @@ footer p {
     font-style: italic;
     z-index: 0;
     border-radius: 24px;
+}
+
+input{@apply text-black/80}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  @apply -translate-y-2 text-[10px] leading-4 font-normal; 
+}
+
+input:focus ~ label {
+  @apply left-0;
 }
 
 .welcome-call-to-action{

@@ -16,6 +16,7 @@ import { Button } from '@/components/ui/button';
 import { useState } from "react";
 import { createMessage } from "@/lib/actions";
 import { ZoomInComponent } from "../AnimatedContainer";
+import { CustomInput } from "@/components/ui/CustomInput";
 
 
 
@@ -45,7 +46,7 @@ const formSchema = z.object({
 
 const ContactForm = () => {
     const [isLoading, setIsLoading] = useState(false);
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState<string | undefined >(undefined);
     const [errors, setErrors] = useState({})
 
 
@@ -56,16 +57,12 @@ const ContactForm = () => {
         const result = await createMessage(form.getValues())
         if(result?.errors){
             setErrors(result.errors);
-            form.reset();
             return;
         }else{
-            setMessage('Message sent successfully');
-            form.reset(form.getValues())
-    
+            setMessage("Message sent successfully!")
         }
         setIsLoading(false)
     }
-
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -78,7 +75,7 @@ const ContactForm = () => {
         },
     })
 
-    const useform = useFormContext()
+  
     return (
         <div className={` w-full p-4 !h-full flex flex-col justify-center items-center`}>
             <div>
@@ -123,8 +120,9 @@ const ContactForm = () => {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input
-                                        placeholder="Enter your fullname"
+                                    <CustomInput
+                                        label="Full name"
+                                        required={true}
                                         type="text" {...field} />
                                 </FormControl>
                                 <FormMessage />
@@ -139,9 +137,10 @@ const ContactForm = () => {
                             <FormItem>
 
                                 <FormControl>
-                                    <Input
-                                        placeholder="Enter your email."
-                                        type="text" {...field} />
+                                    <CustomInput
+                                    label="Email"
+                                    required={true}
+                                    type="text" {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -155,9 +154,11 @@ const ContactForm = () => {
                             <FormItem>
 
                                 <FormControl>
-                                    <Input
-                                        placeholder="Enter your phone number."
-                                        type="tel" {...field} />
+                                    <CustomInput
+                                    label="Phone number"
+                                    required ={false}
+                                    type="tel" 
+                                    {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>

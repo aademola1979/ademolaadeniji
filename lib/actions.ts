@@ -2,8 +2,8 @@
 
 import { sql } from "@vercel/postgres";
 const short = require('short-uuid')
-import { revalidatePath } from 'next/cache';
-import { redirect } from 'next/navigation';
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 import {z} from 'zod';
 import { Message } from './typeDefinitions';
 
@@ -21,7 +21,6 @@ const FormSchema = z.object({
 
 
 export async function createMessage(message:Message){
-    console.log('from server', message)
     const validatedFields = FormSchema.safeParse(message)
 
     if(!validatedFields.success){
@@ -38,14 +37,17 @@ export async function createMessage(message:Message){
  
     try {
         await sql`
-        INSERT INTO messages (name, email, content, date) VALUES (${name}, ${email}, ${phone}, ${content}, ${date} )
+        INSERT INTO messages (name, email, phone, content, date) VALUES (${name}, ${email}, ${phone}, ${content}, ${date} )
         `;
+        return {message:"Message sent successfully!"}
     } catch (error) {
 
     console.log(error)
         return {error: 'Something went wrong. Please, try again.'}
         
+    }finally{
+        revalidatePath('/contact');
+        redirect('/contact');
     }
-    revalidatePath('/contact');
-    redirect('/contact');
+   
 }

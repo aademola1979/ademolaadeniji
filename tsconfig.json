@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/module/about/skill-sets/CardWrapper.js", "app/module/CTA/index.js", "app/module/projects/index.tsx", "app/module/projects/WorkCard.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/module/about/skill-sets/CardWrapper.js", "app/module/CTA/index.js", "app/module/projects/index.tsx", "app/module/projects/WorkCard.jsx", "components/ui/CustomInput.jsx"],
   "exclude": ["node_modules"]
 }
