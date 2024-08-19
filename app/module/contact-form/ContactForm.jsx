@@ -4,6 +4,7 @@ import { useForm, useFormContext } from "react-hook-form";
 import { z } from "zod";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import {CustomTextarea} from "@/components/ui/CustomTextarea"
 import {
     Form,
     FormItem,
@@ -17,6 +18,7 @@ import { useState } from "react";
 import { createMessage } from "@/lib/actions";
 import { ZoomInComponent } from "../AnimatedContainer";
 import { CustomInput } from "@/components/ui/CustomInput";
+
 
 
 
@@ -124,6 +126,7 @@ const ContactForm = () => {
                                         label="Full name"
                                         required={true}
                                         type="text" 
+                                        errors={errors}
                                         {...field} />
                                 </FormControl>
                                 <FormMessage />
@@ -141,7 +144,9 @@ const ContactForm = () => {
                                     <CustomInput
                                     label="Email"
                                     required={true}
-                                    type="text" {...field} />
+                                    type="text" 
+                                    errors={errors}
+                                    {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -158,7 +163,8 @@ const ContactForm = () => {
                                     <CustomInput
                                     label="Phone number"
                                     required ={false}
-                                    type="tel" 
+                                    type="tel"
+                                    errors={errors} 
                                     {...field} />
                                 </FormControl>
                                 <FormMessage />
@@ -174,8 +180,11 @@ const ContactForm = () => {
                             <FormItem>
 
                                 <FormControl>
-                                    <Textarea
-                                        placeholder="Enter your message or question if any."
+                                    <CustomTextarea
+
+                                       name="content"
+                                       label="Enter your message or question if any"
+                                       required={false}
                                         {...field}
                                         className="text-black/80" />
                                 </FormControl>

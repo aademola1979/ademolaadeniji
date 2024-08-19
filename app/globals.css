@@ -332,7 +332,7 @@ footer p {
 /*+++++++++++++++++++++input*/
 .custom-input-container{
   width: 100%;
-  z-index: 0;
+  z-index: 10;
   position: relative;
   font-size: 0.75rem;
   line-height: 1.25rem;
@@ -349,21 +349,20 @@ footer p {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 0%;
-  background-color: whitesmoke;
+  background-color: transparent;
   border-width: 1px;
   appearance: none;
   border-color: rgb(218, 206, 186);
   border-radius: 8px;
+  z-index: 10;
   
 }
 
-.custom-input{@apply py-2}
-
+.custom-input{@apply pt-3 pb-1 text-white/80 font-normal text-base ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50}
+textarea{@apply flex min-h-[80px] w-full rounded-md px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50}
 .custom-input:focus{
   outline: none;
   right: 0;
-  border-color: black;
-
 }
 
 .input-error{
@@ -382,11 +381,11 @@ footer p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   position: absolute;
-  z-index: 0;
+  z-index: -10;
   color: gray;
 }
 
-.input-label{@apply !top-3}
+.input-label{@apply !top-2}
 
 .input-label-error{
   color: rgb(244, 63, 94);
@@ -672,7 +671,7 @@ footer p {
     border-radius: 24px;
 }
 
-input{@apply text-black/80}
+input{@apply text-white/80}
 
 input:focus ~ label,
 input:not(:placeholder-shown) ~ label {
@@ -680,6 +679,15 @@ input:not(:placeholder-shown) ~ label {
 }
 
 input:focus ~ label {
+  @apply left-0;
+}
+
+textarea:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  @apply -translate-y-2 text-[10px] leading-4 font-normal; 
+}
+
+textarea:focus ~ label {
   @apply left-0;
 }
 
@@ -815,7 +823,7 @@ input:focus ~ label {
    
    }
 
-  .inactive-work-car{
+  .inactive-work-card{
     flex: 2;
 
   }
