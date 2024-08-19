@@ -1,5 +1,6 @@
-import { FadeInComponent, SpringInVaraintComponent, StaggerContainer, ZoomInComponent, ZoomOutComponent } from "@/app/module/AnimatedContainer"
+import { FadeInComponent, SpringInVaraintComponent, StaggerContainer } from "@/app/module/AnimatedContainer"
 import ContactFormContainer from "@/app/module/contact-form"
+
 import ContactHeader from "@/app/module/contact-form/ContactHeader"
 import Image from "next/image"
 

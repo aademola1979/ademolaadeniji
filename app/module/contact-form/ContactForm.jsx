@@ -46,11 +46,11 @@ const formSchema = z.object({
 
 const ContactForm = () => {
     const [isLoading, setIsLoading] = useState(false);
-    const [message, setMessage] = useState<string | undefined >(undefined);
+    const [message, setMessage] = useState();
     const [errors, setErrors] = useState({})
 
 
-    async function myOnSubmit(values: z.infer<typeof formSchema>) {
+    async function myOnSubmit() {
         
         setIsLoading(true)
         
@@ -64,7 +64,7 @@ const ContactForm = () => {
         setIsLoading(false)
     }
 
-    const form = useForm<z.infer<typeof formSchema>>({
+    const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
             name: "",
@@ -91,7 +91,7 @@ const ContactForm = () => {
                                 Object.keys(errors).map((key, i)=>(
                                     <p key={i}>
                                         {
-                                            `${key}: ${errors[key as keyof typeof errors]}`
+                                            `${key}: ${errors[key]}`
                                         }
                                     </p>
                                 ))
@@ -103,7 +103,7 @@ const ContactForm = () => {
             </div>
             <Form  {...form} >
                 <form onSubmit={form.handleSubmit(myOnSubmit)}
-                    className="grid gap-4 w-full min-w-[8rem] rounded-md max-w-[20rem]">
+                    className="contact-form">
                         <ZoomInComponent 
                         className=""
                         delay={0.2}
@@ -123,7 +123,8 @@ const ContactForm = () => {
                                     <CustomInput
                                         label="Full name"
                                         required={true}
-                                        type="text" {...field} />
+                                        type="text" 
+                                        {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
