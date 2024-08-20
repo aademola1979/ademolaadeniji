@@ -1,9 +1,7 @@
 'use client'
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm, useFormContext } from "react-hook-form";
+import { useForm} from "react-hook-form";
 import { z } from "zod";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import {CustomTextarea} from "@/components/ui/CustomTextarea"
 import {
     Form,
@@ -112,7 +110,7 @@ const ContactForm = () => {
                         duration={1.5}
                         viewport={{ once:true }}
                         >
-                        <FormDescription className="text-base sm:text-xl text-center text-bold rico">Or, fill the form and I&apos;ll reach you.</FormDescription>
+                        <FormDescription className="text-base sm:text-xl text-center text-bold rico">Fill the form and I&apos;ll reach you.</FormDescription>
                             
                         </ZoomInComponent>
                     
