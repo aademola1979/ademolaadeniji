@@ -4,7 +4,7 @@ import Logo from "../Logo"
 
 const UpperFooter = () => {
   return (
-    <div className="pt-4 w-full flex justify-between">
+    <div className="pt-4 w-full flex-wrap flex justify-between">
       <Logo className="py-2 px-3"/>
       <SocialMedia x="fill-white"/>
     </div>

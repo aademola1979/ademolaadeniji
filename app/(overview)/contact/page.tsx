@@ -17,8 +17,13 @@ const ContactPage = () => {
           duration={1.8}
           direction='left'
          className="flex justify-cente max-w-fitflex-2">
-          <Image src='/images/connect3.png' width={200} height={200} alt="connect"
-            className="h-[4rem] w-[6rem] lg:h-[15rem] lg:w-[15rem]" />
+          <Image src='/images/connect3.png' 
+          width={200} 
+          height={200} 
+          priority
+          alt="connect"
+          sizes="(max-width: 360px) 10px, (max-width: 780px) 40vw, 20vw "
+          className="h-[4rem] w-[6rem] lg:h-[15rem] lg:w-[15rem]" />
         </SpringInVaraintComponent>
         <div className="grid lg:flex gap-4 ">
         <FadeInComponent
