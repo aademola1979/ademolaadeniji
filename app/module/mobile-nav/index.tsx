@@ -56,7 +56,7 @@ const MobileNav = () => {
   return (
     <div>
       <Sheet>
-        <SheetTrigger asChild className="" onClick={toggleMobileNav}><CiMenuFries className="section-titles fill-white text-xl font-bold text-white block lg:hidden cursor-pointer" /></SheetTrigger>
+        <SheetTrigger asChild className="text-white" onClick={toggleMobileNav}><CiMenuFries className=""/></SheetTrigger>
         <SheetContent side="left" onClick={toggleMobileNav} className="min-h-[100vh] overflow-x-auto pt-[4rem] flex flex-col justify-between gap-0">
           <div className=" grid gap-4">
             {

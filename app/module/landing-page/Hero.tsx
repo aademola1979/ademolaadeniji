@@ -13,11 +13,10 @@ const Hero = () => {
         type='tween'
         viewport={{ once:true }}
     className="relative overflow-hidden min-w-full h-[500px] sm:h-[600px] lg:h-[500px] rounded-sm">
-      <Image src="/images/de-man-light.png" alt="Ademola" 
+      <img src="/images/de-man-light.png" alt="Ademola" 
         width={200} 
         height={320} 
-        priority
-        sizes="(min-width: 1024px) 350vw, 100vw "
+        sizes="(min-width: 1024px) 350vw, 100vw"
         className="absolute top-0 left-0 right-0 rounded min-w-full max-w-full h-full"/>
       <div className="relative mb-[1rem] mt-[18rem] sm:mt-[22rem] grid gap-4">
         <div className="hero-text-container grid lg:hidden rounded-lg">

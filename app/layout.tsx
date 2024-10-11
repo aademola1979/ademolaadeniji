@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "./module/header";
 import Footer from "./module/footer";
 import siteMetadata from "@/lib/utility/siteMetadata";
-import BlurBgComonent from "./module/BlurBgComponent";
+
 
 //const inter = Inter({ subsets: ["latin"] });
 export const metadata = {

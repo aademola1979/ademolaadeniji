@@ -625,7 +625,6 @@ textarea{@apply flex min-h-[80px] w-full rounded-md px-3 py-2 text-sm ring-offse
     filter: blur(150px);
   }
   
-  
   .mana-gradient{
     background-color: #FFDEE9;
     background-image: linear-gradient(190deg, #d5e3fc 1%, #e8e8f1 36%, #ffffff 73%);

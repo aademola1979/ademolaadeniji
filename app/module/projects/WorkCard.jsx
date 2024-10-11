@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/ui/button";
 import { fadeIn } from "@/lib/motion";
 import { motion } from "framer-motion";
