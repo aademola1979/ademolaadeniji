@@ -2,9 +2,9 @@ export const workData = [
     {
         id:"work-0",
         title:"Legalese",
-        description:"An AI-powered app that answers questions based on the Nigerian constittution. I implemented complete RAG system in this app",
+        description:"An AI-powered app that answers questions based on the Nigerian constittution. I implemented a complete RAG system in this app",
         imgUrl:"/images/legalese.png",
-        category:"AI",
+        category:"AI-powered app",
         siteUrl:"https://legalese-ai.vercel.app",
 
     },
